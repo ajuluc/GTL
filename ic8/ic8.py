@@ -2,7 +2,7 @@
 database(
     thermoLibraries = ['BurkeH2O2', 'Klippenstein_Glarborg2016' , 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC', 'DFT_QCI_thermo', 'CBS_QB3_1dHR'],
     reactionLibraries = ['combustion_core/version5'],
-    seedMechanisms = ['BurkeH2O2inN2', 'C2H4+O_Klipp2017','Klippenstein_Glarborg2016'],
+    seeiC8H18chanisms = ['BurkeH2O2inN2', 'C2H4+O_Klipp2017','Klippenstein_Glarborg2016'],
     kineticsDepositories = ['training'],
     kineticsFamilies = 'default',
     kineticsEstimator = 'rate rules',
@@ -120,13 +120,13 @@ simpleReactor(
     pressure=[(1.0,'bar'),(40.0,'bar')],
     nSims=20,
     initialMoleFractions={
-        # "DME": 0.0654, # phi = 1
-        "DME": [0.0654/2, 0.0654*2], # range of 0.5 < phi < 2
+        # "iC8H18": 0.0654, # phi = 1
+        "iC8H18": [0.0654/2, 0.0654*2], # range of 0.5 < phi < 2
         "N2": 0.7383,
         "O2": 0.1963,
         },
 #    terminationConversion={
-#        'DME': 0.9,
+#        'iC8H18': 0.9,
 #        },
     terminationTime=(1.0, 's')
 )
@@ -137,13 +137,13 @@ simpleReactor(
     pressure=[(1.0,'bar'),(40.0,'bar')],
     nSims=10,
     initialMoleFractions={
-        # "DME": 0.0654, # phi = 1
-        "DME": [0.0654/2, 0.0654*2], # range of 0.5 < phi < 2
+        # "iC8H18": 0.0654, # phi = 1
+        "iC8H18": [0.0654/2, 0.0654*2], # range of 0.5 < phi < 2
         "N2": 0.7383,
         "O2": 0.1963,
         },
 #    terminationConversion={
-#        'DME': 0.9,
+#        'iC8H18': 0.9,
 #        },
     terminationTime=(1.0, 's')
 )
