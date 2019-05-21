@@ -158,6 +158,7 @@ model(
     toleranceKeepInEdge=0.0,
     toleranceMoveToCore=0.1,
     filterReactions = True,
+    filterThreshold = 5e8, # Default is 5e8
     maximumEdgeSpecies=100000,
 )
 
