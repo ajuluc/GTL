@@ -1,7 +1,7 @@
 # Data sources
 database(
-    thermoLibraries = ['BurkeH2O2', 'Klippenstein_Glarborg2016' , 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC', 'DFT_QCI_thermo', 'CBS_QB3_1dHR'],
-    reactionLibraries = ['combustion_core/version5'],
+    thermoLibraries = ['BurkeH2O2', 'Klippenstein_Glarborg2016' , 'CurranPentane','primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC', 'DFT_QCI_thermo', 'CBS_QB3_1dHR'],
+    reactionLibraries = ['CurranPentane','combustion_core/version5'],
     seeiC8H18chanisms = ['BurkeH2O2inN2', 'C2H4+O_Klipp2017','Klippenstein_Glarborg2016'],
     kineticsDepositories = ['training'],
     kineticsFamilies = 'default',
@@ -116,14 +116,14 @@ species(
 
 # Reaction systems 1 for the high temperature range
 simpleReactor(
-    temperature=[(500,'K'),(1900,'K')],#max reactor temperature must always be less than max pdep temperature
+    temperature=[(550,'K'),(1200,'K')],#max reactor temperature must always be less than max pdep temperature
     pressure=[(1.0,'bar'),(40.0,'bar')],
-    nSims=20,
+    nSims=60,
     initialMoleFractions={
-        # "iC8H18": 0.0654, # phi = 1
-        "iC8H18": [0.0654/2, 0.0654*2], # range of 0.5 < phi < 2
-        "N2": 0.7383,
-        "O2": 0.1963,
+        # "iC8H18": 0.0165224, # phi = 1
+        "iC8H18": [0.0165224/2, 0.0165224*2], # range of 0.5 < phi < 2
+        "N2": 0.776947,
+        "O2": 0.20653,
         },
 #    terminationConversion={
 #        'iC8H18': 0.9,
@@ -134,14 +134,14 @@ simpleReactor(
 
 # Reaction system 2 for the low temperature range which is the region of interest
 simpleReactor(
-    temperature=[(500,'K'),(900,'K')],
+    temperature=[(550,'K'),(800,'K')],
     pressure=[(1.0,'bar'),(40.0,'bar')],
-    nSims=10,
+    nSims=80,
     initialMoleFractions={
         # "iC8H18": 0.0654, # phi = 1
-        "iC8H18": [0.0654/2, 0.0654*2], # range of 0.5 < phi < 2
-        "N2": 0.7383,
-        "O2": 0.1963,
+        "iC8H18": [0.0165224/2, 0.0165224*2], # range of 0.5 < phi < 2
+        "N2": 0.776947,
+        "O2": 0.20653,
         },
 #    terminationConversion={
 #        'iC8H18': 0.9,
