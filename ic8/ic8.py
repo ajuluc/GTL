@@ -128,7 +128,8 @@ simpleReactor(
 #    terminationConversion={
 #        'iC8H18': 0.9,
 #        },
-    terminationTime=(1.0, 's')
+    terminationTime=(1.0, 's'),
+    terminationRateRatio=0.01,
 )
 
 # Reaction system 2 for the low temperature range which is the region of interest
@@ -145,7 +146,8 @@ simpleReactor(
 #    terminationConversion={
 #        'iC8H18': 0.9,
 #        },
-    terminationTime=(1.0, 's')
+    terminationTime=(1.0, 's'),
+    terminationRateRatio=0.01,
 )
 
 simulator(
