@@ -6,13 +6,12 @@ database(
     kineticsDepositories = ['training'],
     kineticsFamilies = 'default',
     kineticsEstimator = 'rate rules',
-    
 )
 # List of species 
 species(
-    label = 'DME',
+    label = 'iC8H18',
     reactive = True,
-    structure = SMILES("COC"),
+    structure = SMILES("CC(C)(C)CC(C)C"),
 )
 
 species(
@@ -20,7 +19,6 @@ species(
     reactive = True,
     structure = SMILES("[O][O]"),
 )
-
 
 species(
     label = 'N2',
@@ -35,10 +33,17 @@ species(
 )
 
 
-# We want C2H and O to be forced into the core,
+# We want CH, C2H and O to be forced into the core,
 # and to have known (reproducible) species numbers
 # because we use them when post-processing ignition
 # delay simulations.
+
+species(
+    label = 'CH',
+    reactive = True,
+    structure = SMILES("[CH]"),
+)
+
 species(
     label = 'C2H',
     reactive = True,
@@ -52,18 +57,24 @@ species(
 )
 
 
-# Species showing up in sensitivity analysis at low temperature ignition
-# Figure 17 in Zhao et al 2007
+# Species showing up in JSR species profiles 
+# in Figure 5 of Dagaut 2014
 species(
-    label = 'CH3OCH2O2',
+    label = 'CO',
     reactive = True,
-    structure = SMILES("COCO[O]"),
+    structure = SMILES("[C-]#[O+]"),
 )
 
 species(
-    label = 'CH2OCH2O2H',
+    label = 'CO2',
     reactive = True,
-    structure = SMILES("[CH2]OCOO"),
+    structure = SMILES("O=C=O"),
+)
+
+species(
+    label = 'H2O',
+    reactive = True,
+    structure = SMILES("O"),
 )
 
 species(
@@ -73,16 +84,35 @@ species(
 )
 
 species(
-    label = 'CH3OCH2',
+    label = 'CH4',
     reactive = True,
-    structure = SMILES("[CH2]OC"),
+    structure = SMILES("C"),
 )
 
 species(
-    label = 'O2CH2OCH2O2H',
+    label = 'C2H4',
     reactive = True,
-    structure = SMILES("[O]OCOCOO"),
+    structure = SMILES("C=C"),
 )
+
+species(
+    label = 'C3H6',
+    reactive = True,
+    structure = SMILES("C=CC"),
+)
+
+species(
+    label = 'H2',
+    reactive = True,
+    structure = SMILES("[H][H]"),
+)
+
+species(
+    label = 'iC4H8', # isobutene
+    reactive = True,
+    structure = SMILES("C=C(C)C"),
+)
+
 
 # Reaction systems 1 for the high temperature range
 simpleReactor(
