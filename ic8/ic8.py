@@ -116,7 +116,7 @@ species(
 
 # Reaction systems 1 for the high temperature range
 simpleReactor(
-    temperature=[(550,'K'),(1400,'K')],#max reactor temperature must always be less than max pdep temperature
+    temperature=[(550,'K'),(1500,'K')],#max reactor temperature must always be less than max pdep temperature
     pressure=[(1.0,'bar'),(40.0,'bar')],
     nSims=5,
     initialMoleFractions={
