@@ -1,8 +1,8 @@
 # Data sources
 database(
-    thermoLibraries = ['BurkeH2O2', 'Klippenstein_Glarborg2016' , 'CurranPentane','primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC', 'DFT_QCI_thermo', 'CBS_QB3_1dHR'],
-    reactionLibraries = ['CurranPentane','combustion_core/version5'],
-    seeiC8H18chanisms = ['BurkeH2O2inN2', 'C2H4+O_Klipp2017','Klippenstein_Glarborg2016'],
+    thermoLibraries = ['BurkeH2O2', 'Klippenstein_Glarborg2016' , 'CurranPentane','FFCM1(-)','primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC', 'DFT_QCI_thermo', 'CBS_QB3_1dHR'],
+    reactionLibraries = ['CurranPentane','FFCM1(-)','combustion_core/version5'],
+    seedMechanisms = ['BurkeH2O2inN2', 'C2H4+O_Klipp2017','Klippenstein_Glarborg2016'],
     kineticsDepositories = ['training'],
     kineticsFamilies = 'default',
     kineticsEstimator = 'rate rules',
@@ -116,14 +116,14 @@ species(
 
 # Reaction systems 1 for the high temperature range
 simpleReactor(
-    temperature=[(550,'K'),(1200,'K')],#max reactor temperature must always be less than max pdep temperature
+    temperature=[(550,'K'),(1400,'K')],#max reactor temperature must always be less than max pdep temperature
     pressure=[(1.0,'bar'),(40.0,'bar')],
-    nSims=60,
+    nSims=5,
     initialMoleFractions={
-        # "iC8H18": 0.0165224, # phi = 1
-        "iC8H18": [0.0165224/2, 0.0165224*2], # range of 0.5 < phi < 2
-        "N2": 0.776947,
-        "O2": 0.20653,
+        # "iC8H18": 0.015748, # phi = 1
+        "iC8H18": [0.015748/2, 0.015748*2], # range of 0.5 < phi < 2
+        "N2": 0.787402,
+        "O2": 0.19685,
         },
 #    terminationConversion={
 #        'iC8H18': 0.9,
@@ -136,12 +136,12 @@ simpleReactor(
 simpleReactor(
     temperature=[(550,'K'),(800,'K')],
     pressure=[(1.0,'bar'),(40.0,'bar')],
-    nSims=80,
+    nSims=17,
     initialMoleFractions={
-        # "iC8H18": 0.0654, # phi = 1
-        "iC8H18": [0.0165224/2, 0.0165224*2], # range of 0.5 < phi < 2
-        "N2": 0.776947,
-        "O2": 0.20653,
+        # "iC8H18": 0.015748, # phi = 1
+        "iC8H18": [ 0.015748/2, 0.015748*2], # range of 0.5 < phi < 2
+        "N2": 0.787402,
+        "O2": 0.19685 ,
         },
 #    terminationConversion={
 #        'iC8H18': 0.9,

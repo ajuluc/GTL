@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 #SBATCH --time=unlimited
 #SBATCH --job-name=IC8
 #SBATCH --output=IC8.log
