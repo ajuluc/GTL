@@ -1,0 +1,9 @@
+
+Missing transport data:
+chxoqjB
+(and possibly more)
+
+Duplicate species:
+P2c4h614  is duplicate of  p2c4h614
+P2c4h513  is duplicate of  p2c4h513
+VINacrol  is duplicate of  vinacrol
