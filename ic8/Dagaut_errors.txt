@@ -1,6 +1,18 @@
 
 Missing transport data:
 chxoqjB
+c3h6ooh1-2
+c3h6ooh1-3  
+c3h6ooh2-1  
+c3h6ooh1-1  
+c3h6ooh1-2o2
+c3h6ooh1-3o2
+c3h6ooh1-1o2
+c3h6ooh2-1o2
+c3ket12     
+c3ket13     
+c3ket21     
+
 (and possibly more)
 
 Duplicate species:
