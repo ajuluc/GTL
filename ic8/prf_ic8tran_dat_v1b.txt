@@ -1710,4 +1710,4 @@ C5H91-2        2        386.2        5.489        0.4        0        1        !
 IC5H8            2  396.5        5.419     0.3  0.0  1.0  !  WJP:  ISOPRENE, TCPC, POLING 4TH ED.
 !IC5H7        2        382.1        5.548        0        0        1        !!!        IC5H12
 IC5H7            2  396.5        5.419     0.3  0.0  1.0  !  WJP:  ISOPRENE, TCPC, POLING 4TH ED.
-IC5H7O        2        430.1        5.833       
+IC5H7O        2        430.1        5.833  0.3  0.0  1.0  !  WJP:  ISOPRENE, TCPC, POLING 4TH ED.!copied the previous line to get rid of cantera error     
