@@ -155,7 +155,7 @@ simulator(
     rtol=1e-8,
 )
 model(
-    toleranceKeepInEdge=0.0,
+    toleranceKeepInEdge=0.0055,
     toleranceMoveToCore=0.1,
     filterReactions = True,
     filterThreshold = 5e8, # Default is 5e8
