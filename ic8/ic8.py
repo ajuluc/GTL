@@ -186,7 +186,7 @@ model(
     maximumEdgeSpecies=100000,
     maxNumObjsPerIter = 3, # number of objects (species, reactions, PDepNetworks) that can be taken from one simulation
     maxNumSpecies = 800,
-
+)
 
 pressureDependence(
         method='modified strong collision',
