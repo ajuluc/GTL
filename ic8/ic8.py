@@ -150,16 +150,42 @@ simpleReactor(
     terminationRateRatio=0.01,
 )
 
+# Introducing staging into the model and simulator blocks
+
+#first stage with a higher tolerance 
 simulator(
     atol=1e-16,
     rtol=1e-8,
 )
+
+#second stage with a lower tolerance 
+simulator(
+    atol=1e-16,
+    rtol=1e-8,
+)
+
+# first stage with a lower tolerance of maxNumSpecies=500
+
 model(
-    toleranceKeepInEdge=0.0,
+    toleranceKeepInEdge=0.0055,
     toleranceMoveToCore=0.1,
     filterReactions = True,
     filterThreshold = 5e8, # Default is 5e8
     maximumEdgeSpecies=100000,
+    maxNumObjsPerIter = 1, # number of objects (species, reactions, PDepNetworks) that can be taken from one simulation
+    maxNumSpecies = 500,
+)
+
+# second stage with a lower tolerance of maxNumSpecies=800
+
+model(
+    toleranceKeepInEdge=0.0055,
+    toleranceMoveToCore=0.1,
+    filterReactions = True,
+    filterThreshold = 5e8, # Default is 5e8
+    maximumEdgeSpecies=100000,
+    maxNumObjsPerIter = 3, # number of objects (species, reactions, PDepNetworks) that can be taken from one simulation
+    maxNumSpecies = 800,
 )
 
 pressureDependence(
