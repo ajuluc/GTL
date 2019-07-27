@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --nodes=1
-#SBATCH --time=Unlimited
+#SBATCH --time=8-09:44:15
 #SBATCH --job-name=n-pch
 #SBATCH --output=n-pch.log
 #SBATCH --partition=west
