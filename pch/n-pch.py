@@ -201,9 +201,9 @@ pressureDependence(
 options(
     units='si',
     saveRestartPeriod=None,
-    generateOutputHTML=True,
+    generateOutputHTML=False,
     generatePlots=False,
-    saveEdgeSpecies=True,
+    saveEdgeSpecies=False,
     saveSimulationProfiles=True,
  )
 # Introduced the species constraint for the mechanism. Set the maximumRadicalElectrons to 2 for N2
