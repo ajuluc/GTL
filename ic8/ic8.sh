@@ -6,7 +6,7 @@
 #SBATCH --job-name=IC8
 #SBATCH --output=IC8.log
 #SBATCH --partition=west
-#SBATCH --exclude=c[3040,5003]
+#SBATCH --exclude=c[5003]
 
 
 
