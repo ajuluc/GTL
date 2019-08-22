@@ -2,7 +2,7 @@
 database(
     thermoLibraries = ['BurkeH2O2', 'Klippenstein_Glarborg2016' , 'CurranPentane','FFCM1(-)','primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC', 'DFT_QCI_thermo', 'CBS_QB3_1dHR'],
     reactionLibraries = [('CurranPentane',False),('FFCM1(-)',False),('combustion_core/version5',False)],
-    seedMechanisms = ['JetSurF2.0','BurkeH2O2inN2','BurkeH2O2inArHe','C2H4+O_Klipp2017','Klippenstein_Glarborg2016'],
+    seedMechanisms = ['JetSurF2.0','BurkeH2O2inN2','BurkeH2O2inArHe','C2H4+O_Klipp2017','Klippenstein_Glarborg2016','Zil_ic8(2)'],
     kineticsDepositories = ['training'],
     kineticsFamilies = 'default',
     kineticsEstimator = 'rate rules',
@@ -6089,17 +6089,6 @@ species(
     )
     
 
-species(
-    label='H2CC',
-    reactive=True,
-    structure=adjacencyList('''
-        multiplicity 3
-        1 C u0 p0 c0 {2,D} {3,S} {4,S}
-        2 C u2 p0 c0 {1,D}
-        3 H u0 p0 c0 {1,S}
-        4 H u0 p0 c0 {1,S}
-        ''')
-    )
     
 
 species(
@@ -37350,7 +37339,7 @@ pressureDependence(
 
 options(
     units='si',
-    name='Zil_ic8(2)',
+    name='Zil_ic8(3)',
     saveRestartPeriod=None,
     generateOutputHTML=False,
     generateSeedEachIteration=True,
@@ -37370,4 +37359,4 @@ generatedSpeciesConstraints(
     allowSingletO2 = True,
 )
 
-
+restartFromSeed(path='/home/ajulu.c/Code/GTL/ic8/seed/Zil_ic8(2)')
