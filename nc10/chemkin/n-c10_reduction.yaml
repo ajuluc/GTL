@@ -1,0 +1,71 @@
+model: chem_annotated.cti
+targets:
+  - nC10H22(1)
+  - O2(2)
+retained-species:
+  - N2
+  - Ar
+method: DRGEP
+error: 10.0
+sensitivity-analysis: False
+autoignition-conditions:
+  - kind: constant volume
+    pressure: 13.0
+    temperature: 1500.0
+    fuel:
+      nC10H22(1): 1.0
+    oxidizer:
+      O2(2): 1.0
+      N2: 3.76
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 13.0
+    temperature: 800.0
+    fuel:
+      nC10H22(1): 1.0
+    oxidizer:
+      O2(2): 1.0
+      N2: 3.76
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 13.0
+    temperature: 680.0
+    fuel:
+      nC10H22(1): 1.0
+    oxidizer:
+      O2(2): 1.0
+      N2: 3.76
+    equivalence-ratio: 1.0
+
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 1500.0
+    fuel:
+     nC10H22(1): 1.0
+    oxidizer:
+      O2(2): 1.0
+      N2: 3.76
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 800.0
+    fuel:
+      nC10H22(1): 1.0
+    oxidizer:
+      O2(2): 1.0
+      N2: 3.76
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 680.0
+    fuel:
+      nC10H22(1): 1.0
+    oxidizer:
+      O2(2): 1.0
+      N2: 3.76
+    equivalence-ratio: 1.0
+

@@ -1,0 +1,76 @@
+Running autoignition simulations for starting model.
+No ignition detected for ignition case 0
+Running autoignition simulations for starting model.
+No ignition detected for ignition case 0
+Running autoignition simulations for starting model.
+No ignition detected for ignition case 1
+Running autoignition simulations for starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Running autoignition simulations for starting model.
+Maximum number of steps reached before convergence for ignition case 2
+Running autoignition simulations for starting model.
+Maximum number of steps reached before convergence for ignition case 2
+Running autoignition simulations for starting model.
+Maximum number of steps reached before convergence for ignition case 5
+Running autoignition simulations for starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+1.00e-02  |        357        | 4.24
+2.00e-02  |        309        | 6.73
+3.00e-02  |        270        | 44.80
+---------------------------------------------
+DRGEP reduction complete.
+Skeletal model: 309 species and 10700 reactions.
+Maximum error: 6.73%
+Final reduced model saved as reduced_309.cti
