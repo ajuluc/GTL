@@ -1,0 +1,47 @@
+Reusing existing autoignition samples for the starting model.
+Beginning DRGEP reduction loop
+---------------------------------------------
+Threshold | Number of species | Max error (%)
+1.00e-02  |        357        | 4.24
+2.00e-02  |        309        | 6.73
+3.00e-02  |        270        | 44.80
+---------------------------------------------
+DRGEP reduction complete.
+Skeletal model: 309 species and 10700 reactions.
+Maximum error: 6.73%
+Final reduced model saved as reduced_309.cti
+Beginning sensitivity analysis stage, using initial approach.
+Reusing existing autoignition samples for the starting model.
+-----------------------------------------------------
+Number of species |  Species removed  | Max error (%)
+       308        |    C7H13(260)     | 6.73
+       307        |     C4H6(102)     | 6.73
+       306        |     S(16664)      | 6.73
+       305        |    C6H5O(116)     | 6.73
+       304        |      S(2917)      | 6.73
+       303        |    C8H15(229)     | 6.73
+       302        |    C5H10(275)     | 6.73
+       301        |      C2H(4)       | 6.73
+       300        |     C4H2(60)      | 6.73
+       299        |     S(16632)      | 6.73
+       298        |     CH2*(55)      | 6.73
+       297        |    OCHCO(372)     | 6.73
+       296        |    C4H5-2(97)     | 6.73
+       295        |     S(19533)      | 6.73
+       294        |     S(20140)      | 6.74
+       293        |    C9H19(164)     | 6.74
+       292        |     S(19536)      | 6.74
+       291        |    C2H3O(365)     | 6.75
+       290        |     S(20215)      | 6.77
+       289        |    C7H13(147)     | 6.81
+       288        |     S(17093)      | 6.90
+       287        |     C4H7(77)      | 7.03
+       286        |      S(3156)      | 7.32
+       285        |      S(3005)      | 7.90
+       284        |    C9H17(267)     | 8.30
+       283        |     C4H7(304)     | 8.53
+       282        |    C8H14(239)     | 10.21
+-----------------------------------------------------
+Sensitivity analysis stage complete.
+Skeletal model: 283 species and 8753 reactions.
+Maximum error: 8.53%
