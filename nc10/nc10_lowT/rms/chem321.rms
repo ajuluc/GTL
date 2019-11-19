@@ -9222,32 +9222,32 @@ Phases:
         type: NASApolynomial
       type: NASA
     type: Species
-  - name: PC4H9
+  - name: C5H11-1
     radicalelectrons: 1
-    smiles: '[CH2]CCC'
+    smiles: '[CH2]CCCC'
     thermo:
       polys:
-      - Tmax: 1393.0
+      - Tmax: 1394.0
         Tmin: 200.0
         coefs:
-        - 0.350939
-        - 0.0447617
-        - -2.76331e-05
-        - 9.10558e-09
-        - -1.28318e-12
-        - 7745.08
-        - 25.3924
+        - 0.098319
+        - 0.0558654
+        - -3.28856e-05
+        - 9.58367e-09
+        - -1.08641e-12
+        - 4820.66
+        - 28.6921
         type: NASApolynomial
       - Tmax: 5000.0
-        Tmin: 1393.0
+        Tmin: 1394.0
         coefs:
-        - 11.8227
-        - 0.0197585
-        - -6.73845e-06
-        - 1.04383e-09
-        - -6.04576e-14
-        - 3503.34
-        - -36.9846
+        - 15.1918
+        - 0.0240339
+        - -8.19718e-06
+        - 1.27003e-09
+        - -7.35728e-14
+        - -802.149
+        - -53.6479
         type: NASApolynomial
       type: NASA
     type: Species
@@ -9280,32 +9280,32 @@ Phases:
         type: NASApolynomial
       type: NASA
     type: Species
-  - name: C5H11-1
+  - name: PC4H9
     radicalelectrons: 1
-    smiles: '[CH2]CCCC'
+    smiles: '[CH2]CCC'
     thermo:
       polys:
-      - Tmax: 1394.0
+      - Tmax: 1393.0
         Tmin: 200.0
         coefs:
-        - 0.098319
-        - 0.0558654
-        - -3.28856e-05
-        - 9.58367e-09
-        - -1.08641e-12
-        - 4820.66
-        - 28.6921
+        - 0.350939
+        - 0.0447617
+        - -2.76331e-05
+        - 9.10558e-09
+        - -1.28318e-12
+        - 7745.08
+        - 25.3924
         type: NASApolynomial
       - Tmax: 5000.0
-        Tmin: 1394.0
+        Tmin: 1393.0
         coefs:
-        - 15.1918
-        - 0.0240339
-        - -8.19718e-06
-        - 1.27003e-09
-        - -7.35728e-14
-        - -802.149
-        - -53.6479
+        - 11.8227
+        - 0.0197585
+        - -6.73845e-06
+        - 1.04383e-09
+        - -6.04576e-14
+        - 3503.34
+        - -36.9846
         type: NASApolynomial
       type: NASA
     type: Species
@@ -23795,6 +23795,18 @@ Reactions:
   - R_3
   type: ElementaryReaction
 - kinetics:
+    A: 15939750000.0
+    Ea: 0.0
+    n: -1.17734
+    type: Arrhenius
+  products:
+  - nC10H22
+  radicalchange: -2
+  reactants:
+  - C5H11-1
+  - C5H11-1
+  type: ElementaryReaction
+- kinetics:
     Ps:
     - 10132.5
     - 101325.0
@@ -23836,18 +23848,6 @@ Reactions:
   reactants:
   - PC4H9
   - '[CH2]CCCCC'
-  type: ElementaryReaction
-- kinetics:
-    A: 15939750000.0
-    Ea: 0.0
-    n: -1.17734
-    type: Arrhenius
-  products:
-  - nC10H22
-  radicalchange: -2
-  reactants:
-  - C5H11-1
-  - C5H11-1
   type: ElementaryReaction
 - kinetics:
     A: 6760000000.0
