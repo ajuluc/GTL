@@ -1,0 +1,19 @@
+# YAML file example for the `adiabatic_flame` module
+# file specifes a parameter variation of the equivalence ratio 
+variation:
+  entry: upstream.phi 
+  values: [0.5, 0.75, 0.96, 1.0, 1.17, 1.38, 1.59, 1.8, 2.0 ]
+output:
+  format: h5
+defaults:
+  upstream:
+    T: [300.0, kelvin, 'temperature']
+    P: [1., atmosphere, 'pressure']
+    phi: [0.55, dimensionless, 'equivalence ratio']
+    fuel: 'nC10H22(1)'
+    oxidizer: 'O2(2):0.21,N2:0.79'
+  chemistry:
+    mechanism: reduced_283.cti
+  domain:
+    width: [30, millimeter, 'domain width']
+ctwrap: 0.1.0
