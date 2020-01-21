@@ -1,0 +1,333 @@
+! Species         Shape    LJ-depth  LJ-diam   DiplMom   Polzblty  RotRelaxNum Data     
+! Name            Index    epsilon/k_B sigma     mu        alpha     Zrot      Source   
+H(14)               0     145.000     2.050     0.000     0.000     0.000    ! NOx2018
+OH(15)              1      80.000     2.750     0.000     0.000     0.000    ! NOx2018
+He(16)              0      10.200     2.576     0.000     0.000     0.000    ! NOx2018
+HO2(17)             2     107.400     3.458     0.000     0.000     1.000    ! NOx2018
+H2O2(18)            2     289.300     4.196     0.000     0.000     0.000    ! PrimaryTransportLibrary
+HOCO(19)            2     498.000     3.590     0.000     0.000     2.000    ! NOx2018
+HCO(20)             2     498.000     3.590     0.000     0.000     0.000    ! NOx2018
+CH3(21)             2     144.000     3.800     0.000     0.000     0.000    ! NOx2018
+CH2(22)             2     144.000     3.800     0.000     0.000     0.000    ! NOx2018
+CH3OH(23)           2     481.800     3.626     0.000     0.000     1.000    ! NOx2018
+CH2(S)(24)          2     144.000     3.800     0.000     0.000     0.000    ! NOx2018
+CH2OH(25)           2     417.000     3.690     1.700     0.000     2.000    ! NOx2018
+CH3O(26)            2     417.000     3.690     1.700     0.000     2.000    ! NOx2018
+HCOH(27)            2     110.700     4.443     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+CH3OO(28)           2     417.000     3.690     1.700     0.000     2.000    ! NOx2018
+CH2CO(29)           2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+C2H5(30)            2     252.300     4.302     0.000     0.000     1.500    ! NOx2018
+C2H3(31)            2     209.000     4.100     0.000     0.000     1.000    ! NOx2018
+C(32)               0      97.530     3.621     0.000     1.760     4.000    ! NOx2018
+C2H2(33)            1     209.000     4.100     0.000     0.000     2.500    ! NOx2018
+CH3OOH(34)          2     481.800     3.626     0.000     0.000     1.000    ! NOx2018
+CH2OOH(35)          2     417.000     3.690     1.700     0.000     2.000    ! NOx2018
+C2H6(36)            2     252.300     4.302     0.000     0.000     1.500    ! NOx2018
+CH3CHO(37)          2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+C2H5O(38)           2     362.600     4.530     0.000     0.000     1.500    ! NOx2018
+C2H5O2(39)          2     395.000     4.037     1.300     0.000     1.000    ! NOx2018
+CH2CHO(40)          2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+H2CC(41)            2     298.358     4.485     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=387.48 K, Pc=62.39 bar (from Joback method)
+C2H4O(42)           2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+C2H5O(43)           2     362.600     4.530     0.000     0.000     1.500    ! NOx2018
+cC2H4O(44)          2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+C2H5O2(45)          2     395.000     4.037     1.300     0.000     1.000    ! NOx2018
+C2H3O2(46)          2     395.000     4.037     1.300     0.000     1.000    ! NOx2018
+CHCHO(47)           2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+OCHCHO(48)          2     440.200     4.010     0.000     0.000     2.000    ! NOx2018
+HCCO(49)            2     150.000     2.500     0.000     0.000     1.000    ! NOx2018
+HCCOH(50)           2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+CHCHOH(51)          2     224.700     4.162     0.000     0.000     1.000    ! NOx2018
+C2(52)              1      97.530     3.621     0.000     1.760     4.000    ! NOx2018
+C2O(53)             1     232.400     3.828     0.000     0.000     1.000    ! NOx2018
+C2H6O(54)           2     362.600     4.530     0.000     0.000     1.500    ! NOx2018
+C2H5O(55)           2     362.600     4.530     0.000     0.000     1.500    ! NOx2018
+C2H5O3(56)          2     395.000     4.037     1.300     0.000     1.000    ! NOx2018
+CH3CO(57)           2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+cC2H3O(58)          2     436.000     3.970     0.000     0.000     2.000    ! NOx2018
+HOCHO(59)           2     481.800     3.626     1.700     0.000     1.000    ! NOx2018
+C2H3O3(60)          2     435.500     4.860     0.000     0.000     1.000    ! NOx2018
+OCHCO(61)           2     440.200     4.010     0.000     0.000     2.000    ! NOx2018
+C2H6O2(62)          2     395.000     4.037     1.300     0.000     1.000    ! NOx2018
+C2H5O2(63)          2     395.000     4.037     1.300     0.000     1.000    ! NOx2018
+C2H4O2(64)          2     395.000     4.037     1.300     0.000     1.000    ! NOx2018
+HOCH2O(65)          2     470.600     4.410     0.000     0.000     1.500    ! NOx2018
+OCHO(66)            2     498.000     3.590     0.000     0.000     2.000    ! NOx2018
+C2H4O3(67)          2     437.218     5.762     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=567.82 K, Pc=43.11 bar (from Joback method)
+C2H3O2(68)          2     452.392     5.643     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=587.52 K, Pc=47.5 bar (from Joback method)
+N2                  1      97.530     3.621     0.000     1.760     4.000    ! PrimaryTransportLibrary
+Ar                  0     136.500     3.330     0.000     0.000     0.000    ! NOx2018
+Ne                  0     148.600     3.758     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+nC10H22(1)          2     455.009     7.303     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.92 K, Pc=22.04 bar (from Joback method)
+O2(2)               1     106.700     3.467     0.000     0.000     0.000    ! PrimaryTransportLibrary
+CH(3)               1      80.000     2.750     0.000     0.000     0.000    ! NOx2018
+C2H(4)              1     209.000     4.100     0.000     0.000     2.500    ! NOx2018
+O(5)                0      80.000     2.750     0.000     0.000     0.000    ! NOx2018
+CO(6)               1      91.700     3.690     0.000     1.760     4.000    ! PrimaryTransportLibrary
+CO2(7)              1     195.201     3.941     0.000     0.000     0.000    ! PrimaryTransportLibrary
+H2O(8)              2     809.102     2.641     0.000     1.760     4.000    ! PrimaryTransportLibrary
+CH2O(9)             2     498.000     3.590     0.000     0.000     2.000    ! NOx2018
+CH4(10)             2     141.400     3.746     0.000     2.600    13.000    ! NOx2018
+C2H4(11)            2     280.800     3.971     0.000     0.000     1.500    ! NOx2018
+C3H6(12)            2     266.801     4.982     0.000     0.000     1.000    ! GRI-Mech
+H2(13)              1      59.700     2.833     0.000     0.000     0.000    ! PrimaryTransportLibrary
+C5H11(426)          2     367.022     5.734     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=476.65 K, Pc=36.73 bar (from Joback method)
+C6H13(687)          2     385.187     6.051     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=500.24 K, Pc=32.8 bar (from Joback method)
+PC4H9(190)          2     357.002     5.176     0.000     0.000     1.000    ! GRI-Mech
+C6H13(762)          2     385.187     6.051     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=500.24 K, Pc=32.8 bar (from Joback method)
+NC3H7(101)          2     266.801     4.982     0.000     0.000     1.000    ! GRI-Mech
+S(862)              2     474.089     6.997     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=615.70 K, Pc=26.11 bar (from Joback method)
+S(441)              2     454.766     6.654     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.61 K, Pc=29.12 bar (from Joback method)
+C5H11(427)          2     367.022     5.734     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=476.65 K, Pc=36.73 bar (from Joback method)
+S(192)              2     437.585     6.340     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=568.29 K, Pc=32.39 bar (from Joback method)
+S(448)              2     454.766     6.654     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.61 K, Pc=29.12 bar (from Joback method)
+S(443)              2     457.109     6.684     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=593.65 K, Pc=28.87 bar (from Joback method)
+S(227)              2     437.585     6.340     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=568.29 K, Pc=32.39 bar (from Joback method)
+S(104)              2     420.255     6.025     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=545.79 K, Pc=36.25 bar (from Joback method)
+S(453)              2     457.109     6.684     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=593.65 K, Pc=28.87 bar (from Joback method)
+S(827)              2     471.856     6.967     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=612.80 K, Pc=26.33 bar (from Joback method)
+S(449)              2     454.766     6.654     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.61 K, Pc=29.12 bar (from Joback method)
+S(459)              2     426.289     6.285     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=553.62 K, Pc=32.39 bar (from Joback method)
+S(454)              2     457.109     6.684     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=593.65 K, Pc=28.87 bar (from Joback method)
+S(692)              2     455.009     7.303     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.92 K, Pc=22.04 bar (from Joback method)
+S(689)              2     455.009     7.303     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.92 K, Pc=22.04 bar (from Joback method)
+S(1013)             2     542.040     8.245     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=703.95 K, Pc=18.25 bar (from Joback method)
+S(691)              2     455.009     7.303     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.92 K, Pc=22.04 bar (from Joback method)
+S(1058)             2     542.040     8.245     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=703.95 K, Pc=18.25 bar (from Joback method)
+S(1043)             2     542.040     8.245     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=703.95 K, Pc=18.25 bar (from Joback method)
+S(228)              2     437.585     6.340     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=568.29 K, Pc=32.39 bar (from Joback method)
+S(881)              2     474.089     6.997     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=615.70 K, Pc=26.11 bar (from Joback method)
+S(123)              2     420.255     6.025     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=545.79 K, Pc=36.25 bar (from Joback method)
+S(1109)             2     560.779     7.923     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=728.28 K, Pc=21.28 bar (from Joback method)
+S(1083)             2     542.040     8.245     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=703.95 K, Pc=18.25 bar (from Joback method)
+S(1106)             2     439.001     6.498     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=570.13 K, Pc=30.19 bar (from Joback method)
+S(1037)             2     542.040     8.245     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=703.95 K, Pc=18.25 bar (from Joback method)
+S(1169)             2     631.399     9.189     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=820.00 K, Pc=15.35 bar (from Joback method)
+S(1198)             2     631.399     9.189     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=820.00 K, Pc=15.35 bar (from Joback method)
+S(1211)             2     589.863     8.478     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=766.06 K, Pc=18.26 bar (from Joback method)
+S(991)              2     540.319     8.217     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=701.71 K, Pc=18.37 bar (from Joback method)
+C7H15(684)          2     402.997     6.366     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=523.37 K, Pc=29.47 bar (from Joback method)
+S(1315)             2     488.907     7.279     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=634.94 K, Pc=23.91 bar (from Joback method)
+S(1306)             2     540.319     8.217     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=701.71 K, Pc=18.37 bar (from Joback method)
+S(1311)             2     402.997     6.366     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=523.37 K, Pc=29.47 bar (from Joback method)
+S(1349)             2     491.023     7.309     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=637.69 K, Pc=23.73 bar (from Joback method)
+S(233)              2     524.769     7.265     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=681.52 K, Pc=25.82 bar (from Joback method)
+S(1039)             2     542.040     8.245     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=703.95 K, Pc=18.25 bar (from Joback method)
+S(1406)             2     631.399     9.189     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=820.00 K, Pc=15.35 bar (from Joback method)
+S(1434)             2     631.399     9.189     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=820.00 K, Pc=15.35 bar (from Joback method)
+S(246)              2     524.769     7.265     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=681.52 K, Pc=25.82 bar (from Joback method)
+S(260)              2     482.622     6.595     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=626.78 K, Pc=31.74 bar (from Joback method)
+S(1404)             2     504.246     7.731     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=654.86 K, Pc=20.59 bar (from Joback method)
+O2CHO(69)           2     429.382     5.617     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=557.64 K, Pc=45.72 bar (from Joback method)
+S(1260)             2     572.731     8.282     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=743.81 K, Pc=19.02 bar (from Joback method)
+S(1264)             2     473.464     6.898     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=614.89 K, Pc=27.21 bar (from Joback method)
+C3H6O(85)           2     376.893     5.351     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=489.47 K, Pc=46.4 bar (from Joback method)
+S(2757)             2     537.436     7.510     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=697.97 K, Pc=23.94 bar (from Joback method)
+S(2775)             2     566.502     7.856     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=735.72 K, Pc=22.04 bar (from Joback method)
+S(2748)             2     454.497     6.624     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.26 K, Pc=29.5 bar (from Joback method)
+S(2745)             2     482.620     6.967     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=626.78 K, Pc=26.93 bar (from Joback method)
+S(2859)             2     539.577     7.540     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=700.75 K, Pc=23.75 bar (from Joback method)
+S(2830)             2     505.162     7.400     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=656.05 K, Pc=23.52 bar (from Joback method)
+S(2877)             2     559.853     7.820     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=727.08 K, Pc=22.08 bar (from Joback method)
+S(2878)             2     539.577     7.540     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=700.75 K, Pc=23.75 bar (from Joback method)
+S(2943)             2     581.100     8.174     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=754.67 K, Pc=20.07 bar (from Joback method)
+S(2829)             2     465.236     6.915     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=604.20 K, Pc=26.54 bar (from Joback method)
+S(2835)             2     539.577     7.540     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=700.75 K, Pc=23.75 bar (from Joback method)
+S(3008)             2     568.278     7.884     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=738.02 K, Pc=21.88 bar (from Joback method)
+S(2273)             2     506.644     7.051     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=657.98 K, Pc=27.27 bar (from Joback method)
+S(3067)             2     535.932     7.422     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=696.02 K, Pc=24.73 bar (from Joback method)
+HO2CHO(70)          2     429.382     5.617     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=557.64 K, Pc=45.72 bar (from Joback method)
+CH3O3(71)           2     454.226     6.094     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=589.90 K, Pc=37.87 bar (from Joback method)
+S(1299)             2     522.909     8.018     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=679.10 K, Pc=19.14 bar (from Joback method)
+S(3468)             2     522.909     8.018     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=679.10 K, Pc=19.14 bar (from Joback method)
+S(3576)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+S(3501)             2     522.909     8.018     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=679.10 K, Pc=19.14 bar (from Joback method)
+S(3639)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+S(3500)             2     522.909     8.018     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=679.10 K, Pc=19.14 bar (from Joback method)
+S(3719)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+S(3747)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+S(3469)             2     522.909     8.018     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=679.10 K, Pc=19.14 bar (from Joback method)
+S(3873)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+S(3902)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+S(3936)             2     583.349     8.473     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=757.60 K, Pc=18.09 bar (from Joback method)
+CH3O3(72)           2     454.226     6.094     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=589.90 K, Pc=37.87 bar (from Joback method)
+C6H12(755)          2     385.248     5.851     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=500.32 K, Pc=36.29 bar (from Joback method)
+CH4O3(73)           2     454.226     6.094     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=589.90 K, Pc=37.87 bar (from Joback method)
+C4H8O(222)          2     399.024     5.862     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=518.21 K, Pc=37.36 bar (from Joback method)
+C2H3O3(74)          2     446.453     5.934     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=579.81 K, Pc=40.31 bar (from Joback method)
+S(1032)             2     524.745     8.046     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=681.49 K, Pc=19 bar (from Joback method)
+S(3328)             2     412.408     5.985     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=535.59 K, Pc=36.29 bar (from Joback method)
+C2H3O3(75)          2     446.453     5.934     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=579.81 K, Pc=40.31 bar (from Joback method)
+SC4H9(191)          2     357.002     5.176     0.000     0.000     1.000    ! GRI-Mech
+H2CC(76)            2     209.000     4.100     0.000     0.000     2.500    ! NOx2018
+C3H3(77)            2     252.000     4.760     0.000     0.000     1.000    ! GRI-Mech
+S(1075)             2     524.745     8.046     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=681.49 K, Pc=19 bar (from Joback method)
+C8H17(685)          2     420.525     6.679     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=546.14 K, Pc=26.63 bar (from Joback method)
+S(6208)             2     505.971     7.592     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=657.10 K, Pc=21.82 bar (from Joback method)
+C3H6O(78)           2     385.407     5.364     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=500.53 K, Pc=47.11 bar (from Joback method)
+C3H5O(79)           2     385.407     5.364     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=500.53 K, Pc=47.11 bar (from Joback method)
+C3H5O3(81)          2     470.926     6.256     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=611.59 K, Pc=36.29 bar (from Joback method)
+S(6409)             2     470.926     6.256     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=611.59 K, Pc=36.29 bar (from Joback method)
+S(6223)             2     505.971     7.592     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=657.10 K, Pc=21.82 bar (from Joback method)
+C2H2O(730)          2     357.876     4.998     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=464.77 K, Pc=54.07 bar (from Joback method)
+S(6216)             2     488.659     7.394     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=634.62 K, Pc=22.81 bar (from Joback method)
+C3H5O2(80)          2     453.773     6.062     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=589.32 K, Pc=38.44 bar (from Joback method)
+C3H5(103)           2     260.001     4.850     0.000     0.000     1.000    ! GRI-Mech
+S(8191)             2     420.239     5.815     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=545.77 K, Pc=40.31 bar (from Joback method)
+S(8204)             2     418.482     5.997     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=543.48 K, Pc=36.6 bar (from Joback method)
+C6H10(347)          2     385.401     5.648     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=500.52 K, Pc=40.36 bar (from Joback method)
+C3H6O3(82)          2     470.926     6.256     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=611.59 K, Pc=36.29 bar (from Joback method)
+S(8238)             2     435.581     6.566     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=565.69 K, Pc=29.03 bar (from Joback method)
+S(3965)             2     566.084     8.276     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=735.17 K, Pc=18.84 bar (from Joback method)
+S(4632)             2     429.687     6.299     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=558.04 K, Pc=32.43 bar (from Joback method)
+C4H7O(276)          2     394.835     5.669     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=512.77 K, Pc=40.88 bar (from Joback method)
+C4H7O(963)          2     413.389     6.071     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=536.87 K, Pc=34.85 bar (from Joback method)
+S(2175)             2     480.179     6.564     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=623.61 K, Pc=32.03 bar (from Joback method)
+S(8835)             2     430.531     6.067     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=559.13 K, Pc=36.38 bar (from Joback method)
+S(8847)             2     430.821     5.856     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=559.51 K, Pc=40.47 bar (from Joback method)
+C3H4O(83)           2     377.211     5.142     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=489.88 K, Pc=52.36 bar (from Joback method)
+C2H3CO(84)          2     377.211     5.142     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=489.88 K, Pc=52.36 bar (from Joback method)
+C2H5CO(86)          2     376.893     5.351     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=489.47 K, Pc=46.4 bar (from Joback method)
+C2H6O(87)           2     329.669     4.980     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=428.14 K, Pc=50.37 bar (from Joback method)
+C2H5O(88)           2     329.669     4.980     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=428.14 K, Pc=50.37 bar (from Joback method)
+S(1046)             2     464.177     7.176     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=602.83 K, Pc=23.7 bar (from Joback method)
+S(1359)             2     491.023     7.309     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=637.69 K, Pc=23.73 bar (from Joback method)
+S(10628)            2     578.062     8.238     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=750.73 K, Pc=19.51 bar (from Joback method)
+S(10626)            2     455.583     6.808     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=591.67 K, Pc=27.24 bar (from Joback method)
+S(3611)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+C2H5O3(89)          2     420.609     5.908     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=546.24 K, Pc=38.48 bar (from Joback method)
+C2H6O3(90)          2     420.609     5.908     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=546.24 K, Pc=38.48 bar (from Joback method)
+C3H5O(137)          2     402.351     5.617     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=522.53 K, Pc=42.83 bar (from Joback method)
+S(725)              2     376.253     5.363     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=488.64 K, Pc=46.03 bar (from Joback method)
+S(8316)             2     496.248     6.776     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=644.48 K, Pc=30.09 bar (from Joback method)
+C2H5O3(91)          2     420.609     5.908     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=546.24 K, Pc=38.48 bar (from Joback method)
+S(7246)             2     488.659     7.394     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=634.62 K, Pc=22.81 bar (from Joback method)
+S(13490)            2     576.480     8.329     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=748.68 K, Pc=18.82 bar (from Joback method)
+S(13579)            2     576.480     8.329     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=748.68 K, Pc=18.82 bar (from Joback method)
+S(13639)            2     549.362     7.847     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=713.46 K, Pc=21.45 bar (from Joback method)
+C4H7(198)           2     348.453     5.213     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=452.54 K, Pc=46.4 bar (from Joback method)
+S(13959)            2     440.057     6.163     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=571.50 K, Pc=35.47 bar (from Joback method)
+S(13676)            2     532.328     7.652     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=691.34 K, Pc=22.42 bar (from Joback method)
+C3H5O(140)          2     376.893     5.351     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=489.47 K, Pc=46.4 bar (from Joback method)
+S(13960)            2     446.983     6.200     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=580.50 K, Pc=35.39 bar (from Joback method)
+C3H5O(175)          2     412.196     5.687     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=535.32 K, Pc=42.28 bar (from Joback method)
+S(1920)             2     465.925     6.281     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=605.10 K, Pc=35.47 bar (from Joback method)
+S(1079)             2     542.040     8.245     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=703.95 K, Pc=18.25 bar (from Joback method)
+S(14485)            2     631.399     9.189     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=820.00 K, Pc=15.35 bar (from Joback method)
+S(14512)            2     631.399     9.189     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=820.00 K, Pc=15.35 bar (from Joback method)
+S(14523)            2     589.863     8.478     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=766.06 K, Pc=18.26 bar (from Joback method)
+C4H6(202)           2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+S(14581)            2     620.115     8.830     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=805.34 K, Pc=16.99 bar (from Joback method)
+S(14561)            2     572.731     8.282     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=743.81 K, Pc=19.02 bar (from Joback method)
+S(14957)            2     446.744     6.612     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=580.19 K, Pc=29.16 bar (from Joback method)
+S(3751)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+C2H5O5(92)          2     506.002     6.800     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=657.14 K, Pc=30.36 bar (from Joback method)
+C4H6(3155)          2     381.310     5.503     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=495.21 K, Pc=43.17 bar (from Joback method)
+C2H4O4(93)          2     463.733     6.128     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=602.25 K, Pc=38.01 bar (from Joback method)
+C2H3O3(94)          2     446.453     5.934     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=579.81 K, Pc=40.31 bar (from Joback method)
+C2H4(752)           2     110.700     4.443     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+S(1425)             2     613.309     8.988     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=796.51 K, Pc=15.94 bar (from Joback method)
+S(1090)             2     507.962     7.621     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=659.69 K, Pc=21.65 bar (from Joback method)
+S(16437)            2     507.962     7.621     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=659.69 K, Pc=21.65 bar (from Joback method)
+S(6205)             2     420.525     6.679     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=546.14 K, Pc=26.63 bar (from Joback method)
+S(16441)            2     507.962     7.621     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=659.69 K, Pc=21.65 bar (from Joback method)
+S(13057)            2     490.750     7.423     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=637.34 K, Pc=22.63 bar (from Joback method)
+S(13025)            2     454.336     5.862     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=590.05 K, Pc=42.55 bar (from Joback method)
+S(15826)            2     489.329     6.244     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=635.49 K, Pc=37.92 bar (from Joback method)
+S(16837)            2     490.606     6.011     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=637.15 K, Pc=42.61 bar (from Joback method)
+S(4618)             2     523.690     6.608     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=680.12 K, Pc=34.24 bar (from Joback method)
+S(1921)             2     463.366     6.250     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=601.77 K, Pc=35.81 bar (from Joback method)
+C2H5O2(95)          2     402.716     5.709     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=523.01 K, Pc=40.83 bar (from Joback method)
+C3H6(753)           2     237.100     5.118     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+C2H4O2(96)          2     377.356     5.234     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=490.07 K, Pc=49.66 bar (from Joback method)
+S(6204)             2     420.525     6.679     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=546.14 K, Pc=26.63 bar (from Joback method)
+S(17352)            2     507.962     7.621     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=659.69 K, Pc=21.65 bar (from Joback method)
+C2H3O3(97)          2     446.453     5.934     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=579.81 K, Pc=40.31 bar (from Joback method)
+C4H6(3160)          2     359.053     5.289     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=466.30 K, Pc=45.78 bar (from Joback method)
+S(9013)             2     413.401     5.579     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=536.88 K, Pc=44.92 bar (from Joback method)
+C2H3O2(98)          2     377.356     5.234     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=490.07 K, Pc=49.66 bar (from Joback method)
+S(14575)            2     620.115     8.830     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=805.34 K, Pc=16.99 bar (from Joback method)
+S(18491)            2     536.278     7.769     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=696.47 K, Pc=21.57 bar (from Joback method)
+S(18583)            2     567.921     8.153     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=737.56 K, Pc=19.77 bar (from Joback method)
+CH3OCO(99)          2     377.356     5.234     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=490.07 K, Pc=49.66 bar (from Joback method)
+S(18716)            2     602.464     8.625     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=782.42 K, Pc=17.71 bar (from Joback method)
+S(18742)            2     599.430     8.355     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=778.48 K, Pc=19.39 bar (from Joback method)
+S(19185)            2     570.747     8.263     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=741.23 K, Pc=19.09 bar (from Joback method)
+S(18567)            2     567.921     8.153     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=737.56 K, Pc=19.77 bar (from Joback method)
+S(19604)            2     622.148     8.779     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=807.98 K, Pc=17.35 bar (from Joback method)
+S(19675)            2     643.186     9.063     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=835.31 K, Pc=16.3 bar (from Joback method)
+S(19713)            2     597.081     8.317     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=775.43 K, Pc=19.58 bar (from Joback method)
+S(19188)            2     572.142     8.064     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=743.04 K, Pc=20.59 bar (from Joback method)
+C3H8(100)           2     266.801     4.982     0.000     0.000     1.000    ! GRI-Mech
+IC3H7(102)          2     266.801     4.982     0.000     0.000     1.000    ! GRI-Mech
+C3H4(174)           2     330.322     4.785     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=428.99 K, Pc=56.87 bar (from Joback method)
+S(105)              2     420.255     6.025     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=545.79 K, Pc=36.25 bar (from Joback method)
+C3H7O(187)          2     402.352     5.826     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=522.54 K, Pc=38.39 bar (from Joback method)
+S(106)              2     422.794     6.057     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=549.08 K, Pc=35.9 bar (from Joback method)
+S(107)              2     422.794     6.057     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=549.08 K, Pc=35.9 bar (from Joback method)
+CC3H6(108)          2     351.793     5.289     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=456.87 K, Pc=44.86 bar (from Joback method)
+C3H5(109)           2     260.001     4.850     0.000     0.000     1.000    ! GRI-Mech
+C3H7O(188)          2     404.948     5.858     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=525.91 K, Pc=38.01 bar (from Joback method)
+C3H5(110)           2     260.001     4.850     0.000     0.000     1.000    ! GRI-Mech
+C6H5(111)           2     399.300     5.949     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+CHO3(5259)          2     432.363     5.425     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=561.51 K, Pc=51.09 bar (from Joback method)
+S(3600)             2     594.152     8.763     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=771.63 K, Pc=16.66 bar (from Joback method)
+S(4879)             2     463.006     6.370     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=601.31 K, Pc=33.8 bar (from Joback method)
+S(19909)            2     602.464     8.625     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=782.42 K, Pc=17.71 bar (from Joback method)
+S(2597)             2     413.289     5.751     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=536.74 K, Pc=40.99 bar (from Joback method)
+S(20448)            2     422.670     5.839     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=548.92 K, Pc=40.06 bar (from Joback method)
+C6H6(112)           2     399.300     5.949     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+C6H6(113)           2     428.299     5.760     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=556.23 K, Pc=42.28 bar (from Joback method)
+C4H5(114)           2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+C4H5(115)           2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+C4H3(116)           2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+C4H5(117)           2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+S(22669)            2     431.612     5.890     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=560.54 K, Pc=39.86 bar (from Joback method)
+S(3787)             2     409.099     5.626     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=531.30 K, Pc=43.34 bar (from Joback method)
+C4H2(118)           1     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+S(19761)            2     601.237     8.527     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=780.83 K, Pc=18.29 bar (from Joback method)
+S(24138)            2     630.288     8.803     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=818.56 K, Pc=17.43 bar (from Joback method)
+S(24236)            2     680.883     9.185     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=884.26 K, Pc=16.58 bar (from Joback method)
+S(24305)            2     639.621     8.563     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=830.68 K, Pc=19.22 bar (from Joback method)
+S(24303)            2     638.629     8.498     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=829.39 K, Pc=19.63 bar (from Joback method)
+S(24644)            2     656.158     8.817     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=852.15 K, Pc=18.06 bar (from Joback method)
+S(24864)            2     659.767     8.853     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=856.84 K, Pc=17.94 bar (from Joback method)
+C5H6(119)           2     410.336     5.711     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=532.90 K, Pc=41.57 bar (from Joback method)
+S(25056)            2     655.112     8.807     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=850.80 K, Pc=18.09 bar (from Joback method)
+S(3742)             2     594.152     8.763     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=771.63 K, Pc=16.66 bar (from Joback method)
+S(26155)            2     530.301     7.623     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=688.70 K, Pc=22.59 bar (from Joback method)
+S(17366)            2     507.962     7.621     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=659.69 K, Pc=21.65 bar (from Joback method)
+S(24837)            2     421.166     6.022     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=546.97 K, Pc=36.38 bar (from Joback method)
+S(23250)            2     349.844     5.168     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=454.34 K, Pc=47.83 bar (from Joback method)
+S(786)              2     490.750     7.423     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=637.34 K, Pc=22.63 bar (from Joback method)
+C5H5(120)           2     410.336     5.711     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=532.90 K, Pc=41.57 bar (from Joback method)
+S(319)              2     399.300     5.949     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+S(26631)            2     494.348     6.571     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=642.01 K, Pc=32.88 bar (from Joback method)
+S(326)              2     562.521     6.917     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=730.55 K, Pc=32.06 bar (from Joback method)
+S(26945)            2     521.481     6.798     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=677.25 K, Pc=31.31 bar (from Joback method)
+S(26987)            2     538.433     6.706     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=699.26 K, Pc=33.68 bar (from Joback method)
+S(27022)            2     494.348     6.571     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=642.01 K, Pc=32.88 bar (from Joback method)
+S(26654)            2     488.720     6.488     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=634.70 K, Pc=33.76 bar (from Joback method)
+S(27048)            2     606.412     7.429     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=787.55 K, Pc=27.91 bar (from Joback method)
+S(27112)            2     553.772     6.793     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=719.18 K, Pc=33.34 bar (from Joback method)
+C4H4(121)           2     357.002     5.180     0.000     0.000     1.000    ! GRI-Mech
+S(122)              2     420.255     6.025     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=545.79 K, Pc=36.25 bar (from Joback method)
+S(124)              2     422.794     6.057     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=549.08 K, Pc=35.9 bar (from Joback method)
+C3H6O(125)          2     371.145     5.437     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=482.01 K, Pc=43.57 bar (from Joback method)
+S(27169)            2     429.183     6.342     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=557.38 K, Pc=31.74 bar (from Joback method)
+S(27684)            2     597.054     7.286     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=775.39 K, Pc=29.12 bar (from Joback method)
+S(26982)            2     521.744     6.600     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=677.59 K, Pc=34.24 bar (from Joback method)
+S(28832)            2     629.056     7.591     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=816.96 K, Pc=27.13 bar (from Joback method)
+S(28817)            2     580.902     6.784     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=754.42 K, Pc=35.1 bar (from Joback method)
+C3H6O(126)          2     385.544     5.646     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=500.71 K, Pc=40.41 bar (from Joback method)
+S(127)              2     507.759     6.950     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=659.43 K, Pc=28.54 bar (from Joback method)
+S(27031)            2     521.481     6.798     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=677.25 K, Pc=31.31 bar (from Joback method)
+S(128)              2     505.782     6.921     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=656.86 K, Pc=28.78 bar (from Joback method)
+S(3607)             2     612.169     8.963     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=795.03 K, Pc=16.04 bar (from Joback method)
+S(30358)            2     583.349     8.473     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=757.60 K, Pc=18.09 bar (from Joback method)
+S(15476)            2     566.084     8.276     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=735.17 K, Pc=18.84 bar (from Joback method)
+S(129)              2     507.759     6.950     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=659.43 K, Pc=28.54 bar (from Joback method)
+S(26767)            2     457.956     6.290     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=594.75 K, Pc=34.72 bar (from Joback method)
+S(27486)            2     442.841     6.057     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=575.12 K, Pc=37.59 bar (from Joback method)
+S(31065)            2     518.244     6.819     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=673.04 K, Pc=30.83 bar (from Joback method)
+S(31303)            2     489.079     6.629     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=635.17 K, Pc=31.67 bar (from Joback method)
