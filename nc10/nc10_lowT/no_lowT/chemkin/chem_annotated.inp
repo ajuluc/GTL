@@ -10248,7 +10248,8 @@ H(14)+nC10H22(1)=H2(13)+S(692)                      1.663824e+04 2.718     6.496
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 6.0
 ! family: H_Abstraction
-OH(15)+nC10H22(1)=H2O(8)+S(692)                     1.880000e+04 2.670     -1.004   
+OH(15)+nC10H22(1)=H2O(8)+S(692)      2.73e+07  1.81   0.8683  !! JetSurf 2.0 according to rmg.mit.edu 
+! RMG rate rules estimate:::    1.880000e+04 2.670     -1.004   
 
 ! Reaction index: Chemkin #977; RMG #3687
 ! Template reaction: H_Abstraction
