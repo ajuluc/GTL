@@ -1,0 +1,145 @@
+model: chem_annotated.cti
+targets:
+  - nC10H22(1)
+  - iC8H18(2)
+  - n-pch(3)
+  - O2(4)
+retained-species:
+  - N2
+  - Ar
+method: DRGEP
+error: 10.0
+sensitivity-analysis: True
+sensitivity-type: initial
+upper-threshold: 0.2
+autoignition-conditions:
+  - kind: constant volume
+    pressure: 16.0
+    temperature: 1500.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 16.0
+    temperature: 1000.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 16.0
+    temperature: 800.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+
+  - kind: constant volume
+    pressure: 16.0
+    temperature: 700.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 16.0
+    temperature: 600.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+  
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 1500.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 1000.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 800.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 700.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+
+  - kind: constant volume
+    pressure: 50.0
+    temperature: 600.0
+    fuel:
+      nC10H22(1): 0.00277938
+      iC8H18(2):  0.00159923
+      n-pch(3):   0.000438343
+
+    oxidizer:
+      O2(2): 0.0689884
+      N2:     0.926195
+    equivalence-ratio: 1.0
+
