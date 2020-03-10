@@ -6467,35 +6467,6 @@ Phases:
         type: NASApolynomial
       type: NASA
     type: Species
-  - name: '[CH2]C1CC1'
-    radicalelectrons: 1
-    smiles: '[CH2]C1CC1'
-    thermo:
-      polys:
-      - Tmax: 936.9066269981495
-        Tmin: 100.0
-        coefs:
-        - 2.9305441640544987
-        - 0.01171943585923674
-        - 5.1740413715496455e-05
-        - -7.36710605381693e-08
-        - 2.8954227660950857e-11
-        - 25855.010009267855
-        - 14.226616573220252
-        type: NASApolynomial
-      - Tmax: 5000.0
-        Tmin: 936.9066269981495
-        coefs:
-        - 8.740472280562186
-        - 0.016976171415292046
-        - -4.804491203595625e-06
-        - 8.107167756397399e-10
-        - -5.836954759445863e-14
-        - 23446.949393553674
-        - -20.465481228353777
-        type: NASApolynomial
-      type: NASA
-    type: Species
   - name: CCC1OC2CCCC1C2
     radicalelectrons: 0
     smiles: CCC1OC2CCCC1C2
@@ -9741,6 +9712,35 @@ Phases:
         - -1.6878e-14
         - 27843.0
         - -3.35272
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: CH3CHCH
+    radicalelectrons: 1
+    smiles: '[CH]=CC'
+    thermo:
+      polys:
+      - Tmax: 1000.0
+        Tmin: 200.0
+        coefs:
+        - 0.913729
+        - 0.0264323
+        - -1.1759e-05
+        - -2.30357e-09
+        - 2.77155e-12
+        - 30916.9
+        - 19.9893
+        type: NASApolynomial
+      - Tmax: 3000.0
+        Tmin: 1000.0
+        coefs:
+        - 5.37253
+        - 0.0157805
+        - -5.99229e-06
+        - 9.30897e-10
+        - -3.6551e-14
+        - 29614.8
+        - -3.41865
         type: NASApolynomial
       type: NASA
     type: Species
@@ -69190,43 +69190,6 @@ Reactions:
   - CH2CHOH
   type: ElementaryReaction
 - kinetics:
-    Pmax: 10000000.000000004
-    Pmin: 1000.0
-    Tmax: 2000.0
-    Tmin: 300.0
-    coefs:
-    - - 9.11174297883178
-      - 1.836504684476111
-      - -0.1475762654569917
-      - -0.030774086469302346
-    - - 0.38885276482736014
-      - 0.4271426713313475
-      - 0.058111132394608384
-      - 0.02038257958357201
-    - - -0.28570591629750136
-      - 0.1583305865626944
-      - -0.024349973576411114
-      - 0.009564050052839255
-    - - -0.17243210997876712
-      - 0.10308901055010403
-      - -0.023980459197102604
-      - 0.00014441880992103898
-    - - -0.06716899226213599
-      - 0.059152282510645984
-      - -0.017222046764652794
-      - -0.004141116954367802
-    - - -0.020474382493387733
-      - 0.03467692450428338
-      - -0.008044677044449255
-      - -0.004816612970739878
-    type: Chebyshev
-  products:
-  - C4H7
-  radicalchange: 0
-  reactants:
-  - '[CH2]C1CC1'
-  type: ElementaryReaction
-- kinetics:
     A: 36300000000.0
     Ea: 54392.0
     n: 0.0
@@ -69278,45 +69241,6 @@ Reactions:
   - n-pch
   type: ElementaryReaction
 - kinetics:
-    A: 108000.00000000001
-    Ea: 29120.6
-    n: 0.0
-    type: Arrhenius
-  products:
-  - HCO
-  - n-pch
-  radicalchange: 0
-  reactants:
-  - CH2O
-  - QOOH_1
-  type: ElementaryReaction
-- kinetics:
-    A: 108000.00000000001
-    Ea: 29120.6
-    n: 0.0
-    type: Arrhenius
-  products:
-  - HCO
-  - n-pch
-  radicalchange: 0
-  reactants:
-  - CH2O
-  - QOOH_2
-  type: ElementaryReaction
-- kinetics:
-    A: 108000.00000000001
-    Ea: 29120.6
-    n: 0.0
-    type: Arrhenius
-  products:
-  - HCO
-  - n-pch
-  radicalchange: 0
-  reactants:
-  - CH2O
-  - QOOH_7
-  type: ElementaryReaction
-- kinetics:
     A: 1.0000000000000002e-06
     Ea: -31296.3
     n: 3.52
@@ -69328,19 +69252,6 @@ Reactions:
   reactants:
   - C2H3
   - CC(CC1CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0000000000000002e-06
-    Ea: -31296.3
-    n: 3.52
-    type: Arrhenius
-  products:
-  - C2H4
-  - CCC(O[O])C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - C2H3
-  - CCC(OO)C1CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 269267.3021367432
@@ -69393,32 +69304,6 @@ Reactions:
   reactants:
   - CH3_1
   - CC(CC1CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 4.450000000000003e-09
-    Ea: 83127.712
-    n: 4.691
-    type: Arrhenius
-  products:
-  - CH3_1
-  - CCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - RCH4_1
-  - CCC(O[O])C1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 3.2120000000000006e-08
-    Ea: 27656.199999999997
-    n: 4.34
-    type: Arrhenius
-  products:
-  - RCH4_1
-  - CCC(OO)C1C[CH]CCC1
-  radicalchange: 0
-  reactants:
-  - CH3_1
-  - CCC(OO)C1CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 2962760.0
@@ -73922,19 +73807,6 @@ Reactions:
   - CCCC1CC(O[O])CCC1OO
   type: ElementaryReaction
 - kinetics:
-    A: 12099999.999999993
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH2-3-1C6H10
-  - CCCC1CC(OO)CCC1OO
-  radicalchange: -2
-  reactants:
-  - PXCH2-3-1C6H11
-  - CCCC1CC(O[O])CCC1OO
-  type: ElementaryReaction
-- kinetics:
     A: 12100000.000000002
     Ea: 0.0
     n: 0.0
@@ -74875,6 +74747,19 @@ Reactions:
     type: Arrhenius
   products:
   - CH2-3-1C6H10
+  - CCCC1CC(OO)CCC1OO
+  radicalchange: -2
+  reactants:
+  - PXCH2-3-1C6H11
+  - CCCC1CC(O[O])CCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 12099999.999999993
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2-3-1C6H10
   - CCCC1CCC(OO)CC1OO
   radicalchange: -2
   reactants:
@@ -75776,19 +75661,6 @@ Reactions:
   radicalchange: 0
   reactants:
   - '[CH2]CC(OO)C1CCCCC1'
-  type: ElementaryReaction
-- kinetics:
-    A: 1.3660161053223355e-08
-    Ea: 23465.964
-    n: 4.22
-    type: Arrhenius
-  products:
-  - RCH4_1
-  - '[CH2]CC(OO)C1CCCCC1'
-  radicalchange: 0
-  reactants:
-  - CH3_1
-  - CCC(OO)C1CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 1.201353403457948e-11
@@ -79714,19 +79586,6 @@ Reactions:
     n: 3.31
     type: Arrhenius
   products:
-  - CCCC1(O[O])CCCC(OO)C1
-  - CCC(OO)C1CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CCC(OO)[C]1CCCC(OO)C1
-  - CCCC1(OO)CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.4550000000000003e-06
-    Ea: 10674.6
-    n: 3.31
-    type: Arrhenius
-  products:
   - CC(CC1(O[O])CCCCC1)OO
   - CCC(OO)C1CCCC(OO)C1
   radicalchange: 0
@@ -80213,19 +80072,6 @@ Reactions:
   - CCCC1(OO)CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 108000000.00000001
-    Ea: 0.0
-    n: -0.75
-    type: Arrhenius
-  products:
-  - CH2-3-1C6H10
-  - CCCC1CC(OO)CCC1OO
-  radicalchange: -2
-  reactants:
-  - PXCH2-3-1C6H11
-  - CCC[C]1CC(OO)CCC1OO
-  type: ElementaryReaction
-- kinetics:
     A: 1.4550000000000003e-06
     Ea: 10674.6
     n: 3.31
@@ -80379,6 +80225,19 @@ Reactions:
   radicalchange: -2
   reactants:
   - QOOH_19
+  - CCC[C]1CC(OO)CCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 108000000.00000001
+    Ea: 0.0
+    n: -0.75
+    type: Arrhenius
+  products:
+  - CH2-3-1C6H10
+  - CCCC1CC(OO)CCC1OO
+  radicalchange: -2
+  reactants:
+  - PXCH2-3-1C6H11
   - CCC[C]1CC(OO)CCC1OO
   type: ElementaryReaction
 - kinetics:
@@ -81433,6 +81292,19 @@ Reactions:
   reactants:
   - CCCC1(OO)CCC[C](OO)C1
   - CCCC1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.4550000000000003e-06
+    Ea: 10674.6
+    n: 3.31
+    type: Arrhenius
+  products:
+  - CCCC1(O[O])CCCC(OO)C1
+  - CCC(OO)C1CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CCC(OO)[C]1CCCC(OO)C1
+  - CCCC1(OO)CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
     A: 1.2771247574139718e-10
@@ -90131,19 +90003,6 @@ Reactions:
   - CCC(OO)C1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 0.0004013053700114171
-    Ea: 13995.450000000004
-    n: 2.9349999999999996
-    type: Arrhenius
-  products:
-  - ROH_1
-  - CCCC1CC[C](OO)CC1OO
-  radicalchange: 0
-  reactants:
-  - OH
-  - CCCC1CCC(OO)CC1OO
-  type: ElementaryReaction
-- kinetics:
     A: 7.290771715442001e-10
     Ea: 26931.016666666666
     n: 4.306666666666667
@@ -91833,6 +91692,32 @@ Reactions:
   - CCCC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CCCC1(O[O])CCCCC1
+  - OOCCC(OO)C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - '[O]OCCC(OO)C1CCCCC1'
+  - CCCC1(OO)CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 2.5100000000000004e-17
+    Ea: -35982.400000000016
+    n: 6.77
+    type: Arrhenius
+  products:
+  - CCCC1(OO)CCC(O[O])CC1
+  - CCCC1(OO)CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1(OO)CC[CH]CC1
+  - CCCC1(OO)CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
     A: 2.5100000000000004e-17
     Ea: -35982.400000000016
     n: 6.77
@@ -91883,32 +91768,6 @@ Reactions:
   reactants:
   - CCCC1(OO)C[CH]CC(OO)C1
   - CCCC1(OO)CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CCCC1(O[O])CCCCC1
-  - OOCCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - '[O]OCCC(OO)C1CCCCC1'
-  - CCCC1(OO)CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 2.5100000000000004e-17
-    Ea: -35982.400000000016
-    n: 6.77
-    type: Arrhenius
-  products:
-  - CCCC1(OO)CCC(O[O])CC1
-  - CCCC1(OO)CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1(OO)CC[CH]CC1
-  - CCCC1(OO)CCC(OO)CC1
   type: ElementaryReaction
 - kinetics:
     A: 2.5100000000000004e-17
@@ -93606,6 +93465,19 @@ Reactions:
   - CCCC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
+    A: 0.0004013053700114171
+    Ea: 13995.450000000004
+    n: 2.9349999999999996
+    type: Arrhenius
+  products:
+  - ROH_1
+  - CCCC1CC[C](OO)CC1OO
+  radicalchange: 0
+  reactants:
+  - OH
+  - CCCC1CCC(OO)CC1OO
+  type: ElementaryReaction
+- kinetics:
     A: 1.2771247574139718e-10
     Ea: 26177.89333333333
     n: 4.473333333333334
@@ -93616,19 +93488,6 @@ Reactions:
   radicalchange: 0
   reactants:
   - C3H7cC6H9OOH
-  - CCC(OO)C1CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 5.42e-10
-    Ea: 20501.6
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCC(OO)[C]1CCCC(OO)C1
-  - CCCC(CCC=O)CCOO
-  radicalchange: 0
-  reactants:
-  - CCC[C](CCC=O)CCOO
   - CCC(OO)C1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
@@ -94456,19 +94315,6 @@ Reactions:
   - CCCC1CCC(OO)CC1OO
   type: ElementaryReaction
 - kinetics:
-    A: 0.0004013053700114171
-    Ea: 13995.450000000004
-    n: 2.9349999999999996
-    type: Arrhenius
-  products:
-  - ROH_1
-  - CCCC1CCC(OO)C[C]1OO
-  radicalchange: 0
-  reactants:
-  - OH
-  - CCCC1CCC(OO)CC1OO
-  type: ElementaryReaction
-- kinetics:
     A: 1.1628296789048456e-14
     Ea: 5352.023333333333
     n: 5.775416666666667
@@ -94521,30 +94367,17 @@ Reactions:
   - CC(CC1(OO)CCCCC1)OO
   type: ElementaryReaction
 - kinetics:
-    A: 4.331279203404594e-06
-    Ea: 59744.47466666667
-    n: 3.3683333333333336
+    A: 0.0004013053700114171
+    Ea: 13995.450000000004
+    n: 2.9349999999999996
     type: Arrhenius
   products:
-  - CH3OH
-  - C3H7cC6H10OO
+  - ROH_1
+  - CCCC1CCC(OO)C[C]1OO
   radicalchange: 0
   reactants:
-  - CH3O
-  - CCCC1CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 6.589613038714778e-17
-    Ea: -22468.08000000002
-    n: 6.535
-    type: Arrhenius
-  products:
-  - CH3OH
-  - C3H7cC6H10OO
-  radicalchange: 0
-  reactants:
-  - CH2OH
-  - CCCC1CCC(OO)CC1
+  - OH
+  - CCCC1CCC(OO)CC1OO
   type: ElementaryReaction
 - kinetics:
     A: 1.1628296789048456e-14
@@ -94610,45 +94443,6 @@ Reactions:
   reactants:
   - QOOH_6
   - CCCC1CCC(OO)CC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - PXC3H6-3-1C6H11
-  - CCCC1(OO)CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - CCCC1(OO)CCC(O[O])CC1
-  - '[CH2]CCC(C[CH2])CCC'
-  type: ElementaryReaction
-- kinetics:
-    A: 2.5100000000000004e-17
-    Ea: -35982.400000000016
-    n: 6.77
-    type: Arrhenius
-  products:
-  - CCCC1(OO)CCC(O[O])CC1
-  - nonene_1
-  radicalchange: 0
-  reactants:
-  - PXC3H6-3-1C6H11
-  - CCCC1(OO)CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 5.066000000000001e-20
-    Ea: -22049.7
-    n: 7.18
-    type: Arrhenius
-  products:
-  - CCCC1(OO)CCC(O[O])CC1
-  - nonene_1
-  radicalchange: 0
-  reactants:
-  - C3H7-3-TAX1C6H10
-  - CCCC1(OO)CCC(OO)CC1
   type: ElementaryReaction
 - kinetics:
     A: 1.4820000000000016e-08
@@ -101463,32 +101257,6 @@ Reactions:
     n: 0.0
     type: Arrhenius
   products:
-  - pch_double_3
-  - CCCC1CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CCCC1CC(=O)CC(O[O])C1
-  - QOOH_7
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_3
-  - CCCC1CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CCCC1CC(=O)CC(O[O])C1
-  - QOOH_1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
   - pch_double_4
   - CCCC1CC(=O)CC(OO)C1
   radicalchange: -2
@@ -101599,19 +101367,6 @@ Reactions:
   reactants:
   - C3H7cC6H9O3
   - CCCC1(O[O])CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1(O[O])CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(O[O])C1
-  - CCCC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 12100000.000000002
@@ -101762,6 +101517,32 @@ Reactions:
     n: 0.0
     type: Arrhenius
   products:
+  - pch_double_3
+  - CCCC1CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CCCC1CC(=O)CC(O[O])C1
+  - QOOH_7
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_3
+  - CCCC1CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CCCC1CC(=O)CC(O[O])C1
+  - QOOH_1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
   - pch_double_5
   - CCCC1CC(=O)CC(OO)C1
   radicalchange: -2
@@ -101820,6 +101601,19 @@ Reactions:
   reactants:
   - CCCC1CC(=O)CC(O[O])C1
   - CCCC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1(O[O])CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(O[O])C1
+  - CCCC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 12099999.999999993
@@ -102628,6 +102422,19 @@ Reactions:
   - CCCC1CCCCC1OO
   type: ElementaryReaction
 - kinetics:
+    A: 1.0000000000000002e-06
+    Ea: -31296.3
+    n: 3.52
+    type: Arrhenius
+  products:
+  - C2H4
+  - CCC(O[O])C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - C2H3
+  - CCC(OO)C1CCCCC1
+  type: ElementaryReaction
+- kinetics:
     A: 3620000.0000000005
     Ea: 0.0
     n: 0.0
@@ -102704,6 +102511,32 @@ Reactions:
   reactants:
   - RH2O2_1
   - C3H7-3-TAX1C6H10
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - PXC3H6-3-1C6H11
+  - CCCC1(OO)CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - CCCC1(OO)CCC(O[O])CC1
+  - '[CH2]CCC(C[CH2])CCC'
+  type: ElementaryReaction
+- kinetics:
+    A: 2.5100000000000004e-17
+    Ea: -35982.400000000016
+    n: 6.77
+    type: Arrhenius
+  products:
+  - CCCC1(OO)CCC(O[O])CC1
+  - nonene_1
+  radicalchange: 0
+  reactants:
+  - PXC3H6-3-1C6H11
+  - CCCC1(OO)CCC(OO)CC1
   type: ElementaryReaction
 - kinetics:
     A: 432000000.00000006
@@ -103250,6 +103083,19 @@ Reactions:
   reactants:
   - CCCC1CC(=O)CC(OO)C1
   - CC(CC1(OO)CC[CH]CC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 5.066000000000001e-20
+    Ea: -22049.7
+    n: 7.18
+    type: Arrhenius
+  products:
+  - CCCC1(OO)CCC(O[O])CC1
+  - nonene_1
+  radicalchange: 0
+  reactants:
+  - C3H7-3-TAX1C6H10
+  - CCCC1(OO)CCC(OO)CC1
   type: ElementaryReaction
 - kinetics:
     A: 5.066000000000001e-20
@@ -103841,32 +103687,6 @@ Reactions:
     n: 0.0
     type: Arrhenius
   products:
-  - pch_double_3
-  - CCCC1CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - QOOH_7
-  type: ElementaryReaction
-- kinetics:
-    A: 1526000.0000000002
-    Ea: -2301.2000000000003
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_3
-  - CCCC1CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - QOOH_1
-  type: ElementaryReaction
-- kinetics:
-    A: 1526000.0000000002
-    Ea: -2301.2000000000003
-    n: 0.0
-    type: Arrhenius
-  products:
   - pch_double_4
   - CCCC1CC(=O)CC(OO)C1
   radicalchange: -2
@@ -103964,19 +103784,6 @@ Reactions:
   reactants:
   - CCCC1[CH]C(=O)CC(OO)C1
   - QOOH_7
-  type: ElementaryReaction
-- kinetics:
-    A: 7.85601686186223e-17
-    Ea: -1924.6399999999994
-    n: 6.375
-    type: Arrhenius
-  products:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1(O[O])CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 1339048.1694098995
@@ -104127,6 +103934,32 @@ Reactions:
     n: 0.0
     type: Arrhenius
   products:
+  - pch_double_3
+  - CCCC1CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - QOOH_7
+  type: ElementaryReaction
+- kinetics:
+    A: 1526000.0000000002
+    Ea: -2301.2000000000003
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_3
+  - CCCC1CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - QOOH_1
+  type: ElementaryReaction
+- kinetics:
+    A: 1526000.0000000002
+    Ea: -2301.2000000000003
+    n: 0.0
+    type: Arrhenius
+  products:
   - pch_double_5
   - CCCC1CC(=O)CC(OO)C1
   radicalchange: -2
@@ -104172,6 +104005,19 @@ Reactions:
   reactants:
   - CCCC1[CH]C(=O)CC(OO)C1
   - CCCC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 7.85601686186223e-17
+    Ea: -1924.6399999999994
+    n: 6.375
+    type: Arrhenius
+  products:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1(O[O])CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 1.7300000000000003e-16
@@ -105431,19 +105277,6 @@ Reactions:
   - CCC[C]1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 96400000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC(CC1=CCCCC1)OO
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - CC(C[C]1CCCCC1)OO
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
     A: 24000000.000000004
     Ea: 0.0
     n: 0.0
@@ -106672,32 +106505,6 @@ Reactions:
   - C[CH]CC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
-    A: 1.7300000000000003e-16
-    Ea: -8953.76
-    n: 6.3
-    type: Arrhenius
-  products:
-  - CH3CHO
-  - CH3cC6H10OO
-  radicalchange: 0
-  reactants:
-  - CH2CHO
-  - CC1CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.569e-10
-    Ea: 177164.00000000006
-    n: 4.45
-    type: Arrhenius
-  products:
-  - CH3CHO
-  - CH3cC6H10OO
-  radicalchange: 0
-  reactants:
-  - CH3CO
-  - CC1CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
     A: 5250.69
     Ea: 0.0
     n: 1.27262
@@ -106710,162 +106517,6 @@ Reactions:
   - CH3cC6H10OO
   type: ElementaryReaction
 - kinetics:
-    A: 12.476806186579196
-    Ea: -5020.799999999999
-    n: 2.0175
-    type: Arrhenius
-  products:
-  - CH2CO
-  - CH3C(O)OOH
-  radicalchange: -2
-  reactants:
-  - CH3CO
-  - CH3C(O)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 4.158935395526399
-    Ea: -5020.799999999999
-    n: 2.0175
-    type: Arrhenius
-  products:
-  - CH2CO
-  - CH3C(O)OOH
-  radicalchange: -2
-  reactants:
-  - CH2CHO
-  - CH3C(O)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 6.614378277661476e-07
-    Ea: -24078.910000000003
-    n: 3.5549999999999997
-    type: Arrhenius
-  products:
-  - CH2CO
-  - CC(CC1CCCCC1)O[O]
-  radicalchange: 0
-  reactants:
-  - HCCO
-  - CC(CC1CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 6.614378277661476e-07
-    Ea: -24078.910000000003
-    n: 3.5549999999999997
-    type: Arrhenius
-  products:
-  - CH2CO
-  - CCC(O[O])C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - HCCO
-  - CCC(OO)C1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 6.614378277661476e-07
-    Ea: -24078.910000000003
-    n: 3.5549999999999997
-    type: Arrhenius
-  products:
-  - CH2CO
-  - CCCC1(OO)CCCC(O[O])C1
-  radicalchange: 0
-  reactants:
-  - HCCO
-  - CCCC1(OO)CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 12.476806186579196
-    Ea: -5020.799999999999
-    n: 2.0175
-    type: Arrhenius
-  products:
-  - CH2CO
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - CH3CO
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 4.158935395526399
-    Ea: -5020.799999999999
-    n: 2.0175
-    type: Arrhenius
-  products:
-  - CH2CO
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - CH2CHO
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 6.589613038714778e-17
-    Ea: -22468.08000000002
-    n: 6.535
-    type: Arrhenius
-  products:
-  - CH3OOH
-  - CC(CC1(OO)CCCCC1)O[O]
-  radicalchange: 0
-  reactants:
-  - CH2OOH
-  - CC(CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 3.120000000000003e-10
-    Ea: 14183.760000000006
-    n: 4.31
-    type: Arrhenius
-  products:
-  - CH3CHO
-  - CCCC1[CH]C(=O)CC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CH2CHO
-  - CCCC1CC(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 5.300000000000001
-    Ea: 183482.0
-    n: 2.0
-    type: Arrhenius
-  products:
-  - CH3CHO
-  - CCCC1[CH]C(=O)CC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CH3CO
-  - CCCC1CC(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3CHO
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - CH3CHOH
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48199999.99999999
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3CHO
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - CH3CH2O
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
     A: 12100000.000000002
     Ea: 0.0
     n: 0.0
@@ -106890,500 +106541,6 @@ Reactions:
   reactants:
   - CH3CH2O
   - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3CH2OO
-  - CC1CCC(OO)CC1
-  radicalchange: 0
-  reactants:
-  - CH3CH2OOH
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH2CH2OH
-  - C[CH]CC1(OO)CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH2CH2OH
-  - CCCC1(OO)C[CH]CCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH2CH2OH
-  - CCCC1(OO)CC[CH]CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH2CH2OH
-  - CCCC1(O[O])CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 633000000.0000001
-    Ea: 0.0
-    n: -0.7
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH3CHOH
-  - C[CH]CC1(OO)CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 633000000.0000001
-    Ea: 0.0
-    n: -0.7
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH3CHOH
-  - CCCC1(OO)C[CH]CCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 633000000.0000001
-    Ea: 0.0
-    n: -0.7
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH3CHOH
-  - CCCC1(OO)CC[CH]CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 30034.53158099317
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - CH2CHOH
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - CH3CHOH
-  - CCCC1(O[O])CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 6.99e-08
-    Ea: 81774.38
-    n: 3.75
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CCCC1CCCCC1O[O]
-  radicalchange: 0
-  reactants:
-  - OCHO
-  - CCCC1CCCCC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 9.569e-10
-    Ea: 177164.00000000006
-    n: 4.45
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CCCC1CCCCC1O[O]
-  radicalchange: 0
-  reactants:
-  - HOCO
-  - CCCC1CCCCC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 6.99e-08
-    Ea: 81774.38
-    n: 3.75
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CCC(O[O])C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - OCHO
-  - CCC(OO)C1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.569e-10
-    Ea: 177164.00000000006
-    n: 4.45
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CCC(O[O])C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - HOCO
-  - CCC(OO)C1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 6.99e-08
-    Ea: 81774.38
-    n: 3.75
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CCCC1(OO)CCCC(O[O])C1
-  radicalchange: 0
-  reactants:
-  - OCHO
-  - CCCC1(OO)CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.569e-10
-    Ea: 177164.00000000006
-    n: 4.45
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CCCC1(OO)CCCC(O[O])C1
-  radicalchange: 0
-  reactants:
-  - HOCO
-  - CCCC1(OO)CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 6.99e-08
-    Ea: 81774.38
-    n: 3.75
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CC(CC1(OO)CCCCC1)O[O]
-  radicalchange: 0
-  reactants:
-  - OCHO
-  - CC(CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 9.569e-10
-    Ea: 177164.00000000006
-    n: 4.45
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CC(CC1(OO)CCCCC1)O[O]
-  radicalchange: 0
-  reactants:
-  - HOCO
-  - CC(CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48199999.99999999
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - HOCHO
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - HOCH2O
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - '[O]OCCCC1CCCCC1'
-  radicalchange: 0
-  reactants:
-  - CH3C(O)OO
-  - OOCCCC1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 2800000.0000000005
-    Ea: 66998.40000000001
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - OOCCC[C]1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CH3C(O)OO
-  - OOCCCC1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - '[O]OCCC(OO)C1CCCCC1'
-  radicalchange: 0
-  reactants:
-  - CH3C(O)OO
-  - OOCCC(OO)C1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 12099999.999999993
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - CCCC1CC(=O)CC(O[O])C1
-  radicalchange: -2
-  reactants:
-  - CH3C(O)OO
-  - C3H7cC6H9O3
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - CCCC1CC(=O)CC(O[O])C1
-  radicalchange: 0
-  reactants:
-  - CH3C(O)OO
-  - CCCC1CC(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.4820000000000016e-08
-    Ea: 33538.944
-    n: 4.313
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - CCCC1[CH]C(=O)CC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CH3C(O)OO
-  - CCCC1CC(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - CH3cC6H10OO
-  radicalchange: 0
-  reactants:
-  - CH3C(O)OO
-  - CC1CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - C3H6
-  radicalchange: -2
-  reactants:
-  - CH3C(O)OO
-  - QOOH_13
-  type: ElementaryReaction
-- kinetics:
-    A: 60069.06316198634
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - C3H6
-  radicalchange: -2
-  reactants:
-  - CH3C(O)OO
-  - QOOH_14
-  type: ElementaryReaction
-- kinetics:
-    A: 96400000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - pch_double_9
-  radicalchange: -2
-  reactants:
-  - CH3C(O)OO
-  - cC6H11
-  type: ElementaryReaction
-- kinetics:
-    A: 1.2400000000000006e+17
-    Ea: 9853.32
-    n: -3.29
-    type: Arrhenius
-  products:
-  - CO
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - HCO
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 596.4394353159423
-    Ea: -3347.2
-    n: 1.345
-    type: Arrhenius
-  products:
-  - CO2
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - HOCO
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 4.158935395526399
-    Ea: -5020.799999999999
-    n: 2.0175
-    type: Arrhenius
-  products:
-  - CO2
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - OCHO
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH2O
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - CH2OH
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 12.476806186579196
-    Ea: -5020.799999999999
-    n: 2.0175
-    type: Arrhenius
-  products:
-  - CH2O
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - CH3O
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 30034.53158099317
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - C2H4
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - C2H5
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C3H6
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - QOOH_13
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 60069.06316198634
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - C3H6
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - QOOH_14
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 230651.25189341596
-    Ea: 53799.45000000001
-    n: 0.0
-    type: Arrhenius
-  products:
-  - ROH_1
-  - CCC(OO)[C]1CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - OH
-  - CCC(OO)C1CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 0.00023600000000000013
-    Ea: -12752.832
-    n: 3.15
-    type: Arrhenius
-  products:
-  - ROH_1
-  - CCCC1[CH]C(=O)CC(OO)C1
-  radicalchange: 0
-  reactants:
-  - OH
-  - CCCC1CC(=O)CC(OO)C1
   type: ElementaryReaction
 - kinetics:
     A: 120000.00000000001
@@ -107451,149 +106608,6 @@ Reactions:
   - QOOH_3
   type: ElementaryReaction
 - kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_3
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_7
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_3
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_4
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_5
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_4
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_4
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_6
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_6
-  type: ElementaryReaction
-- kinetics:
-    A: 30034.53158099317
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_6
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_5
-  type: ElementaryReaction
-- kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_8
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - QOOH_12
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 30034.53158099317
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - pch_double_8
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - QOOH_10
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 96400000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_9
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - cC6H11
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 96400000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_11
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - QOOH_2
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_11
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - QOOH_7
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
     A: 96400000.00000001
     Ea: 0.0
     n: 0.0
@@ -107618,617 +106632,6 @@ Reactions:
   reactants:
   - CH3cC6H10OO
   - QOOH_7
-  type: ElementaryReaction
-- kinetics:
-    A: 432000000.00000006
-    Ea: 0.0
-    n: -0.75
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CC(CC1CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CC(C[C]1CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CC(CC1CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CC(CC1CCCCC1)O[O]
-  type: ElementaryReaction
-- kinetics:
-    A: 8.291235876715068e-10
-    Ea: 6380.600000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CC(CC1CCCCC1)OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CC(C[C]1CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 432000000.00000006
-    Ea: 0.0
-    n: -0.75
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCCC(OO)C1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCC[C]1CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCCC(OO)C1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1C[CH]CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCCC(OO)C1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1CCCC(O[O])C1
-  type: ElementaryReaction
-- kinetics:
-    A: 8.291235876715068e-10
-    Ea: 6380.600000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCC[C]1CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1C[CH]CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCC(OO)C1CCCCC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCC(OO)C1C[CH]CCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 2900000.0000000005
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCC(OO)C1CCCCC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - '[CH2]CC(OO)C1CCCCC1'
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCC(OO)C1CCCCC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCC(O[O])C1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCC(OO)C1C[CH]CCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 3.120000000000003e-10
-    Ea: 14183.760000000006
-    n: 4.31
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - '[CH2]CC(OO)C1CCCCC1'
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCCCC1OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1CC[CH]CC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCCCC1OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1C[CH]CCC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCCCC1OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1CCCCC1O[O]
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CCCCC1OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1C[CH]CCC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CCCCC1OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1CC[CH]CC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - C3H7cC6H9OOH
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - C3H7cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CCC(OO)CC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - C3H7cC6H9OOH
-  type: ElementaryReaction
-- kinetics:
-    A: 8.291235876715068e-10
-    Ea: 6380.600000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC(CCC=O)CCOO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCC[C](CCC=O)CCOO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CC(CC1(OO)C[CH]CCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3cC6H10OO
-  - OOCCCC1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CC1CCC(OO)CC1
-  - '[O]OCCCC1CCCCC1'
-  type: ElementaryReaction
-- kinetics:
-    A: 2.7149640881602887e-13
-    Ea: -5687.55
-    n: 5.245
-    type: Arrhenius
-  products:
-  - CH3cC6H10OO
-  - OOCCCC1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CC1CCC(OO)CC1
-  - OOCCC[C]1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3cC6H10OO
-  - OOCCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CC1CCC(OO)CC1
-  - '[O]OCCC(OO)C1CCCCC1'
-  type: ElementaryReaction
-- kinetics:
-    A: 12099999.999999993
-    Ea: 11335.532601986313
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - CCCC1CC(=O)CC(O[O])C1
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - C3H7cC6H9O3
-  type: ElementaryReaction
-- kinetics:
-    A: 9.200000000000003e-08
-    Ea: 27739.91999999999
-    n: 3.96
-    type: Arrhenius
-  products:
-  - CH3cC6H10OO
-  - CCCC1CC(=O)CC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CC1CCC(OO)CC1
-  - CCCC1CC(=O)CC(O[O])C1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.7300000000000003e-16
-    Ea: -8953.76
-    n: 6.3
-    type: Arrhenius
-  products:
-  - CH3cC6H10OO
-  - CCCC1CC(=O)CC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CC1CCC(OO)CC1
-  - CCCC1[CH]C(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.4060757217045969e-09
-    Ea: 7217.400000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - C[C](CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CC(CC1(OO)CC[CH]CC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CCCC(CC=O)OO
-  - CC1CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - CCCC(C[CH]O)OO
-  - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 432000000.00000006
-    Ea: 0.0
-    n: -0.75
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(OO)CCC[C](OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(OO)C[CH]CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(OO)CCCC(O[O])C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(O[O])CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - C[CH]CC1(OO)CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(OO)C[CH]CCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(OO)CC[CH]CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCCCC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(O[O])CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.1628296789048456e-14
-    Ea: 5352.023333333333
-    n: 5.775416666666667
-    type: Arrhenius
-  products:
-  - CCCC1C[CH]CCC1OO
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CCCC1(OO)CCC[C](OO)C1
-  - CCCC1CCCCC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 8.291235876715068e-10
-    Ea: 6380.600000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - OOCCCC1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - OOCCC[C]1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 8.291235876715068e-10
-    Ea: 6380.600000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CC(OO)CCC1OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCC[C]1CC(OO)CCC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.4060757217045969e-09
-    Ea: 7217.400000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CCC(OO)CC1OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1CCC(OO)C[C]1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.4060757217045969e-09
-    Ea: 7217.400000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1CCC(OO)CC1OO
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1CC[C](OO)CC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.4060757217045969e-09
-    Ea: 7217.400000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1(OO)CCC[C](OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 8.291235876715068e-10
-    Ea: 6380.600000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCC(OO)C1CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCC(OO)[C]1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
     A: 48200000.00000001
@@ -108244,45 +106647,6 @@ Reactions:
   - CCC[C]1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1(OO)CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1(OO)CC[CH]CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1(OO)CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - CCCC1(OO)C[CH]CCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1(OO)CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - C[CH]CC1(OO)CCCCC1
-  type: ElementaryReaction
-- kinetics:
     A: 96400000.00000001
     Ea: 0.0
     n: 0.0
@@ -108294,19 +106658,6 @@ Reactions:
   reactants:
   - CH3cC6H10OO
   - CC(C[C]1CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CCC=C1CCCC(OO)C1
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - CCC(O[O])C1CCC(C)C1
-  - CCC[C]1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
     A: 48200000.00000001
@@ -109164,71 +107515,6 @@ Reactions:
   - OOCCC(OO)[C]1CCCCC1
   type: ElementaryReaction
 - kinetics:
-    A: 2800000.0000000005
-    Ea: 66998.40000000001
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3C(O)OOH
-  - OOCCC(OO)[C]1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CH3C(O)OO
-  - OOCCC(OO)C1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 3.644000000000001e-12
-    Ea: 23806.960000000003
-    n: 5.11
-    type: Arrhenius
-  products:
-  - CC(CC1(OO)C[CH]CCC1)OO
-  - OOCCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - OOCCC(OO)[C]1CCCCC1
-  - CC(CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 1.4550000000000003e-06
-    Ea: 10674.6
-    n: 3.31
-    type: Arrhenius
-  products:
-  - CH3cC6H10OO
-  - OOCCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CC1CCC(OO)CC1
-  - OOCCC(OO)[C]1CCCCC1
-  type: ElementaryReaction
-- kinetics:
-    A: 1.8220000000000005e-12
-    Ea: 23806.960000000003
-    n: 5.11
-    type: Arrhenius
-  products:
-  - CC(CC1(OO)CC[CH]CC1)OO
-  - OOCCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - OOCCC(OO)[C]1CCCCC1
-  - CC(CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 8.291235876715068e-10
-    Ea: 6380.600000000001
-    n: 4.34
-    type: Arrhenius
-  products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - OOCCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - OOCCC(OO)[C]1CCCCC1
-  type: ElementaryReaction
-- kinetics:
     A: 1.8220000000000005e-12
     Ea: 23806.960000000003
     n: 5.11
@@ -109305,6 +107591,32 @@ Reactions:
   reactants:
   - QOOH_6
   - OOCCC(OO)C1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_8
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - QOOH_12
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 30034.53158099317
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - pch_double_8
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - QOOH_10
+  - CH3cC6H10OO
   type: ElementaryReaction
 - kinetics:
     A: 3090000000000.0
@@ -110368,19 +108680,6 @@ Reactions:
   - C[CH]CC1(OO)CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 2.5737475178375032e-09
-    Ea: 32269.100000000002
-    n: 4.29
-    type: Arrhenius
-  products:
-  - CCCC1(OO)CC[CH]CC1
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - CCCC1(OO)CCCCC1
-  type: ElementaryReaction
-- kinetics:
     A: 2.5100000000000004e-17
     Ea: -35982.400000000016
     n: 6.77
@@ -110455,6 +108754,19 @@ Reactions:
   radicalchange: 0
   reactants:
   - C[CH]CC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 2.5737475178375032e-09
+    Ea: 32269.100000000002
+    n: 4.29
+    type: Arrhenius
+  products:
+  - CCCC1(OO)CC[CH]CC1
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - C[CH]CC1(OO)CCCC(OO)C1
+  - CCCC1(OO)CCCCC1
   type: ElementaryReaction
 - kinetics:
     A: 5.1474950356750064e-09
@@ -110678,17 +108990,1278 @@ Reactions:
   - C[CH]CC1(OO)CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
+    A: 2.1638667570044307e-09
+    Ea: 31531.675000000003
+    n: 4.29
+    type: Arrhenius
+  products:
+  - C[CH]CC1(OO)CCCC(OO)C1
+  - n-pch
+  radicalchange: 0
+  reactants:
+  - QOOH_6
+  - CCCC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 596.4394353159423
+    Ea: -3347.2
+    n: 1.345
+    type: Arrhenius
+  products:
+  - CO2
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - HOCO
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 4.158935395526399
+    Ea: -5020.799999999999
+    n: 2.0175
+    type: Arrhenius
+  products:
+  - CO2
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - OCHO
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - CH2OH
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 12.476806186579196
+    Ea: -5020.799999999999
+    n: 2.0175
+    type: Arrhenius
+  products:
+  - CH2O
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - CH3O
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_3
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_7
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_3
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_4
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_5
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_4
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_4
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_6
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_6
+  type: ElementaryReaction
+- kinetics:
+    A: 30034.53158099317
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_6
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_5
+  type: ElementaryReaction
+- kinetics:
+    A: 8.291235876715068e-10
+    Ea: 6380.600000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CC(CC1CCCCC1)OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CC(C[C]1CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 8.291235876715068e-10
+    Ea: 6380.600000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCC[C]1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1C[CH]CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCC(OO)C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCC(OO)C1C[CH]CCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 3.120000000000003e-10
+    Ea: 14183.760000000006
+    n: 4.31
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCC(OO)C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - '[CH2]CC(OO)C1CCCCC1'
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CCCCC1OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1C[CH]CCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CCCCC1OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1CC[CH]CC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CCC(OO)CC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - C3H7cC6H9OOH
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CCCC(CC=O)OO
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - CCCC(C[CH]O)OO
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 12.476806186579196
+    Ea: -5020.799999999999
+    n: 2.0175
+    type: Arrhenius
+  products:
+  - CH2CO
+  - CH3C(O)OOH
+  radicalchange: -2
+  reactants:
+  - CH3CO
+  - CH3C(O)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 4.158935395526399
+    Ea: -5020.799999999999
+    n: 2.0175
+    type: Arrhenius
+  products:
+  - CH2CO
+  - CH3C(O)OOH
+  radicalchange: -2
+  reactants:
+  - CH2CHO
+  - CH3C(O)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 12.476806186579196
+    Ea: -5020.799999999999
+    n: 2.0175
+    type: Arrhenius
+  products:
+  - CH2CO
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - CH3CO
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 4.158935395526399
+    Ea: -5020.799999999999
+    n: 2.0175
+    type: Arrhenius
+  products:
+  - CH2CO
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - CH2CHO
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.7300000000000003e-16
+    Ea: -8953.76
+    n: 6.3
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - CH3cC6H10OO
+  radicalchange: 0
+  reactants:
+  - CH2CHO
+  - CC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.569e-10
+    Ea: 177164.00000000006
+    n: 4.45
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - CH3cC6H10OO
+  radicalchange: 0
+  reactants:
+  - CH3CO
+  - CC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 3.120000000000003e-10
+    Ea: 14183.760000000006
+    n: 4.31
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - CCCC1[CH]C(=O)CC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CH2CHO
+  - CCCC1CC(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 5.300000000000001
+    Ea: 183482.0
+    n: 2.0
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - CCCC1[CH]C(=O)CC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CH3CO
+  - CCCC1CC(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48199999.99999999
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - CH3CH2O
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3CH2OO
+  - CC1CCC(OO)CC1
+  radicalchange: 0
+  reactants:
+  - CH3CH2OOH
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH2CH2OH
+  - C[CH]CC1(OO)CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH2CH2OH
+  - CCCC1(OO)C[CH]CCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH2CH2OH
+  - CCCC1(OO)CC[CH]CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH2CH2OH
+  - CCCC1(O[O])CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 633000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - C[CH]CC1(OO)CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 633000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - CCCC1(OO)C[CH]CCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 633000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - CCCC1(OO)CC[CH]CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 30034.53158099317
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - CCCC1(O[O])CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.9400000000000003e-10
+    Ea: 26401.0
+    n: 4.68
+    type: Arrhenius
+  products:
+  - CH3CO
+  - n-pch
+  radicalchange: 0
+  reactants:
+  - CH3CHO
+  - QOOH_4
+  type: ElementaryReaction
+- kinetics:
+    A: 1.9400000000000003e-10
+    Ea: 26401.0
+    n: 4.68
+    type: Arrhenius
+  products:
+  - CH3CO
+  - n-pch
+  radicalchange: 0
+  reactants:
+  - CH3CHO
+  - QOOH_1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.9400000000000003e-10
+    Ea: 26401.0
+    n: 4.68
+    type: Arrhenius
+  products:
+  - CH3CO
+  - n-pch
+  radicalchange: 0
+  reactants:
+  - CH3CHO
+  - QOOH_7
+  type: ElementaryReaction
+- kinetics:
+    A: 1.9400000000000003e-10
+    Ea: 26401.0
+    n: 4.68
+    type: Arrhenius
+  products:
+  - CH3CO
+  - n-pch
+  radicalchange: 0
+  reactants:
+  - CH3CHO
+  - QOOH_2
+  type: ElementaryReaction
+- kinetics:
+    A: 1.9400000000000003e-10
+    Ea: 26401.0
+    n: 4.68
+    type: Arrhenius
+  products:
+  - CH3CO
+  - n-pch
+  radicalchange: 0
+  reactants:
+  - CH3CHO
+  - QOOH_5
+  type: ElementaryReaction
+- kinetics:
+    A: 380000.00000000006
+    Ea: 30166.6
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CO
+  - n-pch
+  radicalchange: 0
+  reactants:
+  - CH3CHO
+  - QOOH_6
+  type: ElementaryReaction
+- kinetics:
+    A: 6.99e-08
+    Ea: 81774.38
+    n: 3.75
+    type: Arrhenius
+  products:
+  - HOCHO
+  - CCCC1CCCCC1O[O]
+  radicalchange: 0
+  reactants:
+  - OCHO
+  - CCCC1CCCCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 9.569e-10
+    Ea: 177164.00000000006
+    n: 4.45
+    type: Arrhenius
+  products:
+  - HOCHO
+  - CCCC1CCCCC1O[O]
+  radicalchange: 0
+  reactants:
+  - HOCO
+  - CCCC1CCCCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 6.99e-08
+    Ea: 81774.38
+    n: 3.75
+    type: Arrhenius
+  products:
+  - HOCHO
+  - CCC(O[O])C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - OCHO
+  - CCC(OO)C1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.569e-10
+    Ea: 177164.00000000006
+    n: 4.45
+    type: Arrhenius
+  products:
+  - HOCHO
+  - CCC(O[O])C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - HOCO
+  - CCC(OO)C1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 6.99e-08
+    Ea: 81774.38
+    n: 3.75
+    type: Arrhenius
+  products:
+  - HOCHO
+  - CCCC1(OO)CCCC(O[O])C1
+  radicalchange: 0
+  reactants:
+  - OCHO
+  - CCCC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.569e-10
+    Ea: 177164.00000000006
+    n: 4.45
+    type: Arrhenius
+  products:
+  - HOCHO
+  - CCCC1(OO)CCCC(O[O])C1
+  radicalchange: 0
+  reactants:
+  - HOCO
+  - CCCC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48199999.99999999
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HOCHO
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - HOCH2O
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - '[O]OCCCC1CCCCC1'
+  radicalchange: 0
+  reactants:
+  - CH3C(O)OO
+  - OOCCCC1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 2800000.0000000005
+    Ea: 66998.40000000001
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - OOCCC[C]1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CH3C(O)OO
+  - OOCCCC1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - '[O]OCCC(OO)C1CCCCC1'
+  radicalchange: 0
+  reactants:
+  - CH3C(O)OO
+  - OOCCC(OO)C1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 2800000.0000000005
+    Ea: 66998.40000000001
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - OOCCC(OO)[C]1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CH3C(O)OO
+  - OOCCC(OO)C1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 12099999.999999993
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - CCCC1CC(=O)CC(O[O])C1
+  radicalchange: -2
+  reactants:
+  - CH3C(O)OO
+  - C3H7cC6H9O3
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - CCCC1CC(=O)CC(O[O])C1
+  radicalchange: 0
+  reactants:
+  - CH3C(O)OO
+  - CCCC1CC(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.4820000000000016e-08
+    Ea: 33538.944
+    n: 4.313
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - CCCC1[CH]C(=O)CC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CH3C(O)OO
+  - CCCC1CC(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - CH3cC6H10OO
+  radicalchange: 0
+  reactants:
+  - CH3C(O)OO
+  - CC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 6.505574532660438e-06
+    Ea: 6585.4
+    n: 3.215
+    type: Arrhenius
+  products:
+  - CH3CH2OOH
+  - CH3cC6H10OO
+  radicalchange: 0
+  reactants:
+  - CH3CHOOH
+  - CC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 2.5100000000000004e-17
+    Ea: -35982.400000000016
+    n: 6.77
+    type: Arrhenius
+  products:
+  - CH3CH2OOH
+  - CH3cC6H10OO
+  radicalchange: 0
+  reactants:
+  - CH2CH2OOH
+  - CC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3C(O)OO
+  - QOOH_13
+  type: ElementaryReaction
+- kinetics:
+    A: 60069.06316198634
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3C(O)OO
+  - QOOH_14
+  type: ElementaryReaction
+- kinetics:
+    A: 96400000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3C(O)OOH
+  - pch_double_9
+  radicalchange: -2
+  reactants:
+  - CH3C(O)OO
+  - cC6H11
+  type: ElementaryReaction
+- kinetics:
+    A: 1.2400000000000006e+17
+    Ea: 9853.32
+    n: -3.29
+    type: Arrhenius
+  products:
+  - CO
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - HCO
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 596.4394353159423
+    Ea: -3347.2
+    n: 1.345
+    type: Arrhenius
+  products:
+  - CO2
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - HOCO
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 4.158935395526399
+    Ea: -5020.799999999999
+    n: 2.0175
+    type: Arrhenius
+  products:
+  - CO2
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - OCHO
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 30034.53158099317
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - C2H4
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - C2H5
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - QOOH_13
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 60069.06316198634
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - C3H6
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - QOOH_14
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 230651.25189341596
+    Ea: 53799.45000000001
+    n: 0.0
+    type: Arrhenius
+  products:
+  - ROH_1
+  - CCC(OO)[C]1CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - OH
+  - CCC(OO)C1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 0.00023600000000000013
+    Ea: -12752.832
+    n: 3.15
+    type: Arrhenius
+  products:
+  - ROH_1
+  - CCCC1[CH]C(=O)CC(OO)C1
+  radicalchange: 0
+  reactants:
+  - OH
+  - CCCC1CC(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - RH2O2_1
+  - C7H12-13
+  radicalchange: -2
+  reactants:
+  - HO2_1
+  - SAXC7H13
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_3
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_7
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_3
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_1
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_4
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_5
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_4
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_4
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_5
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_18
+  type: ElementaryReaction
+- kinetics:
+    A: 30034.53158099317
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - pch_double_5
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - QOOH_19
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_6
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_6
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 30034.53158099317
+    Ea: -2510.3999999999996
+    n: 1.00875
+    type: Arrhenius
+  products:
+  - pch_double_6
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_5
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 96400000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_9
+  - CC1CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - cC6H11
+  - CH3cC6H10OO
+  type: ElementaryReaction
+- kinetics:
+    A: 96400000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_11
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_2
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - pch_double_11
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - QOOH_7
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 432000000.00000006
+    Ea: 0.0
+    n: -0.75
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CC(CC1CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CC(C[C]1CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CC(CC1CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CC(CC1CCCCC1)O[O]
+  type: ElementaryReaction
+- kinetics:
+    A: 432000000.00000006
+    Ea: 0.0
+    n: -0.75
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCC[C]1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
     A: 102600000.00000001
     Ea: 0.0
     n: -0.35
     type: Arrhenius
   products:
   - C7H12-13
-  - CCCC1(OO)CCCC(OO)C1
+  - CCCC1CCCC(OO)C1
   radicalchange: -2
   reactants:
   - SAXC7H13
+  - CCCC1C[CH]CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1CCCC(O[O])C1
+  type: ElementaryReaction
+- kinetics:
+    A: 2.5737475178375032e-09
+    Ea: 32269.100000000002
+    n: 4.29
+    type: Arrhenius
+  products:
+  - CCCC1C[CH]CC(OO)C1
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
   - C[CH]CC1(OO)CCCC(OO)C1
+  - CCCC1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCC(OO)C1CCCCC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCC(OO)C1C[CH]CCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 2900000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCC(OO)C1CCCCC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - '[CH2]CC(OO)C1CCCCC1'
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCC(OO)C1CCCCC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCC(O[O])C1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 2.1638667570044307e-09
+    Ea: 31531.675000000003
+    n: 4.29
+    type: Arrhenius
+  products:
+  - C[CH]CC1(OO)CCCC(OO)C1
+  - CCC(OO)C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - '[CH2]CC(OO)C1CCCCC1'
+  - CCCC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1CCCCC1OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1CC[CH]CC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1CCCCC1OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1C[CH]CCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1CCCCC1OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1CCCCC1O[O]
   type: ElementaryReaction
 - kinetics:
     A: 2.5737475178375032e-09
@@ -110704,30 +110277,30 @@ Reactions:
   - CCCC1CCCCC1OO
   type: ElementaryReaction
 - kinetics:
-    A: 1.0574493059268619e-09
-    Ea: 12133.600000000002
-    n: 4.34
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
     type: Arrhenius
   products:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
+  - C7H12-13
+  - CCCC1CCC(OO)CC1
+  radicalchange: -2
   reactants:
-  - CCCC1CC(=O)CC(OO)C1
-  - C[CH]CC1(OO)CCCC(OO)C1
+  - SAXC7H13
+  - C3H7cC6H9OOH
   type: ElementaryReaction
 - kinetics:
-    A: 2.1638667570044307e-09
-    Ea: 31531.675000000003
-    n: 4.29
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
     type: Arrhenius
   products:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - n-pch
-  radicalchange: 0
+  - C7H12-13
+  - CCCC1CCC(OO)CC1
+  radicalchange: -2
   reactants:
-  - QOOH_6
-  - CCCC1(OO)CCCC(OO)C1
+  - SAXC7H13
+  - C3H7cC6H10OO
   type: ElementaryReaction
 - kinetics:
     A: 2.5737475178375032e-09
@@ -110741,6 +110314,591 @@ Reactions:
   reactants:
   - C3H7cC6H9OOH
   - CCCC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 8.291235876715068e-10
+    Ea: 6380.600000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC(CCC=O)CCOO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCC[C](CCC=O)CCOO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CC(CC1(OO)C[CH]CCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3cC6H10OO
+  - OOCCCC1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CC1CCC(OO)CC1
+  - '[O]OCCCC1CCCCC1'
+  type: ElementaryReaction
+- kinetics:
+    A: 2.7149640881602887e-13
+    Ea: -5687.55
+    n: 5.245
+    type: Arrhenius
+  products:
+  - CH3cC6H10OO
+  - OOCCCC1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CC1CCC(OO)CC1
+  - OOCCC[C]1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3cC6H10OO
+  - OOCCC(OO)C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CC1CCC(OO)CC1
+  - '[O]OCCC(OO)C1CCCCC1'
+  type: ElementaryReaction
+- kinetics:
+    A: 1.4550000000000003e-06
+    Ea: 10674.6
+    n: 3.31
+    type: Arrhenius
+  products:
+  - CH3cC6H10OO
+  - OOCCC(OO)C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CC1CCC(OO)CC1
+  - OOCCC(OO)[C]1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 12099999.999999993
+    Ea: 11335.532601986313
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC1CCC(OO)CC1
+  - CCCC1CC(=O)CC(O[O])C1
+  radicalchange: -2
+  reactants:
+  - CH3cC6H10OO
+  - C3H7cC6H9O3
+  type: ElementaryReaction
+- kinetics:
+    A: 9.200000000000003e-08
+    Ea: 27739.91999999999
+    n: 3.96
+    type: Arrhenius
+  products:
+  - CH3cC6H10OO
+  - CCCC1CC(=O)CC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CC1CCC(OO)CC1
+  - CCCC1CC(=O)CC(O[O])C1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.7300000000000003e-16
+    Ea: -8953.76
+    n: 6.3
+    type: Arrhenius
+  products:
+  - CH3cC6H10OO
+  - CCCC1CC(=O)CC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CC1CCC(OO)CC1
+  - CCCC1[CH]C(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 432000000.00000006
+    Ea: 0.0
+    n: -0.75
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - C[C](CC1(OO)CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CC(CC1(OO)C[CH]CCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CC(CC1(OO)CC[CH]CC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CC(CC1(O[O])CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CC(CC1(OO)CCCCC1)O[O]
+  type: ElementaryReaction
+- kinetics:
+    A: 1.4060757217045969e-09
+    Ea: 7217.400000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - C[C](CC1(OO)CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CC(CC1(OO)CC[CH]CC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 8.779284329795734e-09
+    Ea: 17528.615555555556
+    n: 3.9572222222222218
+    type: Arrhenius
+  products:
+  - C[C](CC1(OO)CCCCC1)OO
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - C[CH]CC1(OO)CCCC(OO)C1
+  - CC(CC1(OO)CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CCCC(CC=O)OO
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - CCCC(C[CH]O)OO
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCC(OO)CC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(OO)CCC(O[O])CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 432000000.00000006
+    Ea: 0.0
+    n: -0.75
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(OO)CCC[C](OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - C[CH]CC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(OO)C[CH]CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(OO)CCCC(O[O])C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(O[O])CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - C[CH]CC1(OO)CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(OO)C[CH]CCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 102600000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(OO)CC[CH]CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C7H12-13
+  - CCCC1(OO)CCCCC1
+  radicalchange: -2
+  reactants:
+  - SAXC7H13
+  - CCCC1(O[O])CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.1628296789048456e-14
+    Ea: 5352.023333333333
+    n: 5.775416666666667
+    type: Arrhenius
+  products:
+  - CCCC1C[CH]CCC1OO
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CCCC1(OO)CCC[C](OO)C1
+  - CCCC1CCCCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 8.291235876715068e-10
+    Ea: 6380.600000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - OOCCCC1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - OOCCC[C]1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 8.291235876715068e-10
+    Ea: 6380.600000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CC(OO)CCC1OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCC[C]1CC(OO)CCC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.4060757217045969e-09
+    Ea: 7217.400000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CCC(OO)CC1OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1CCC(OO)C[C]1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.4060757217045969e-09
+    Ea: 7217.400000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1CCC(OO)CC1OO
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1CC[C](OO)CC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 8.779284329795734e-09
+    Ea: 17528.615555555556
+    n: 3.9572222222222218
+    type: Arrhenius
+  products:
+  - CCCC1CCC(OO)C[C]1OO
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - C[CH]CC1(OO)CCCC(OO)C1
+  - CCCC1CCC(OO)CC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 8.779284329795734e-09
+    Ea: 17528.615555555556
+    n: 3.9572222222222218
+    type: Arrhenius
+  products:
+  - CCCC1CC[C](OO)CC1OO
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - C[CH]CC1(OO)CCCC(OO)C1
+  - CCCC1CCC(OO)CC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.4060757217045969e-09
+    Ea: 7217.400000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1(OO)CCC[C](OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - C[CH]CC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 8.779284329795734e-09
+    Ea: 17528.615555555556
+    n: 3.9572222222222218
+    type: Arrhenius
+  products:
+  - CCCC1(OO)CCC[C](OO)C1
+  - CCCC1(OO)CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - C[CH]CC1(OO)CCCC(OO)C1
+  - CCCC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 8.291235876715068e-10
+    Ea: 6380.600000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCC(OO)C1CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCC(OO)[C]1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 8.291235876715068e-10
+    Ea: 6380.600000000001
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - OOCCC(OO)C1CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - OOCCC(OO)[C]1CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1(OO)CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1(OO)CC[CH]CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1(OO)CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - CCCC1(OO)C[CH]CCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0574493059268619e-09
+    Ea: 12133.600000000002
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CCCC1(OO)CCCCC1
+  radicalchange: 0
+  reactants:
+  - CCCC1CC(=O)CC(OO)C1
+  - C[CH]CC1(OO)CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 96400000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CC(CC1=CCCCC1)OO
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - CC(C[C]1CCCCC1)OO
+  - CCC(O[O])C1CCC(C)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 48200000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CCC=C1CCCC(OO)C1
+  - CCC(OO)C1CCC(C)C1
+  radicalchange: -2
+  reactants:
+  - CCC(O[O])C1CCC(C)C1
+  - CCC[C]1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
     A: 89.418986603433
@@ -110805,19 +110963,6 @@ Reactions:
   reactants:
   - CCCC1[CH]C(=O)CC(OO)C1
   - CCCC1(O[O])CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CCCC1=CC(=O)CC(OO)C1
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - CCCC1[CH]C(=O)CC(OO)C1
-  - CC(CC1(O[O])CCCCC1)OO
   type: ElementaryReaction
 - kinetics:
     A: 241000.00000000003
@@ -111260,6 +111405,19 @@ Reactions:
   reactants:
   - CCCC1[CH]C(=O)CC(OO)C1
   - CC(CC1(OO)CC[CH]CC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CCCC1=CC(=O)CC(OO)C1
+  - CC(CC1(OO)CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CC(CC1(O[O])CCCCC1)OO
   type: ElementaryReaction
 - kinetics:
     A: 12100000.000000002
@@ -112156,97 +112314,6 @@ Reactions:
   - pC3H4
   type: ElementaryReaction
 - kinetics:
-    A: 6.505574532660438e-06
-    Ea: 6585.4
-    n: 3.215
-    type: Arrhenius
-  products:
-  - CH3CH2OOH
-  - CH3cC6H10OO
-  radicalchange: 0
-  reactants:
-  - CH3CHOOH
-  - CC1CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 2.5100000000000004e-17
-    Ea: -35982.400000000016
-    n: 6.77
-    type: Arrhenius
-  products:
-  - CH3CH2OOH
-  - CH3cC6H10OO
-  radicalchange: 0
-  reactants:
-  - CH2CH2OOH
-  - CC1CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 25600000.000000004
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - CH3CH2OH
-  - CCCC1=CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CH3CHOH
-  - CCCC1[CH]C(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 843000.0000000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3CH2OH
-  - CCCC1=CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CH2CH2OH
-  - CCCC1[CH]C(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3CH2OH
-  - CCCC1=CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CH3CH2O
-  - CCCC1[CH]C(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 241000.00000000003
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3OH
-  - CCCC1=CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CH2OH
-  - CCCC1[CH]C(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CH3OH
-  - CCCC1=CC(=O)CC(OO)C1
-  radicalchange: -2
-  reactants:
-  - CH3O
-  - CCCC1[CH]C(=O)CC(OO)C1
-  type: ElementaryReaction
-- kinetics:
     A: 12100000.000000002
     Ea: 0.0
     n: 0.0
@@ -112270,32 +112337,6 @@ Reactions:
   radicalchange: -2
   reactants:
   - CH3O
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_6
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - QOOH_6
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 30034.53158099317
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - pch_double_6
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - QOOH_5
   - CCC(O[O])C1CCC(C)C1
   type: ElementaryReaction
 - kinetics:
@@ -112373,6 +112414,32 @@ Reactions:
   - C=CC(CCC)O[O]
   type: ElementaryReaction
 - kinetics:
+    A: 241000.00000000003
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3OH
+  - CCCC1=CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH2OH
+  - CCCC1[CH]C(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3OH
+  - CCCC1=CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH3O
+  - CCCC1[CH]C(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
     A: 6.589613038714778e-17
     Ea: -22468.08000000002
     n: 6.535
@@ -112384,6 +112451,45 @@ Reactions:
   reactants:
   - CH2OOH
   - CC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 25600000.000000004
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - CH3CH2OH
+  - CCCC1=CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - CCCC1[CH]C(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 843000.0000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CH2OH
+  - CCCC1=CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH2CH2OH
+  - CCCC1[CH]C(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 12100000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CH2OH
+  - CCCC1=CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH3CH2O
+  - CCCC1[CH]C(=O)CC(OO)C1
   type: ElementaryReaction
 - kinetics:
     A: 6020000.000000001
@@ -112438,32 +112544,6 @@ Reactions:
   - OOCCCC1CCCCC1
   type: ElementaryReaction
 - kinetics:
-    A: 596.4394353159423
-    Ea: -3347.2
-    n: 1.345
-    type: Arrhenius
-  products:
-  - CO2
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - HOCO
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 4.158935395526399
-    Ea: -5020.799999999999
-    n: 2.0175
-    type: Arrhenius
-  products:
-  - CO2
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - OCHO
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
     A: 9.569e-10
     Ea: 177164.00000000006
     n: 4.45
@@ -112490,19 +112570,6 @@ Reactions:
   - CCCC1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 12100000.000000002
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CCCC(CC=O)OO
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - CCCC(C[CH]O)OO
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
     A: 843000.0000000001
     Ea: 0.0
     n: 0.0
@@ -112514,6 +112581,19 @@ Reactions:
   reactants:
   - HCCO
   - CCCC1[CH]C(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 6.589613038714778e-17
+    Ea: -22468.08000000002
+    n: 6.535
+    type: Arrhenius
+  products:
+  - CH3OOH
+  - CC(CC1(OO)CCCCC1)O[O]
+  radicalchange: 0
+  reactants:
+  - CH2OOH
+  - CC(CC1(OO)CCCCC1)OO
   type: ElementaryReaction
 - kinetics:
     A: 0.052593687834187934
@@ -112594,71 +112674,6 @@ Reactions:
   - CCCC1[CH]C(=O)CC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - RH2O2_1
-  - C7H12-13
-  radicalchange: -2
-  reactants:
-  - HO2_1
-  - SAXC7H13
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_4
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - QOOH_5
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - pch_double_4
-  - CCC(OO)C1CCC(C)C1
-  radicalchange: -2
-  reactants:
-  - QOOH_4
-  - CCC(O[O])C1CCC(C)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_5
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_18
-  type: ElementaryReaction
-- kinetics:
-    A: 30034.53158099317
-    Ea: -2510.3999999999996
-    n: 1.00875
-    type: Arrhenius
-  products:
-  - CC1CCC(OO)CC1
-  - pch_double_5
-  radicalchange: -2
-  reactants:
-  - CH3cC6H10OO
-  - QOOH_19
-  type: ElementaryReaction
-- kinetics:
     A: 12099999.999999993
     Ea: 0.0
     n: 0.0
@@ -112670,19 +112685,6 @@ Reactions:
   reactants:
   - PXCH2-3-1C6H11
   - CH3cC6H10OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CCCC1(OO)CCC(OO)CC1
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CCCC1(OO)CCC(O[O])CC1
   type: ElementaryReaction
 - kinetics:
     A: 36300000000.0
@@ -112710,45 +112712,6 @@ Reactions:
   - CCCC1[CH]C(=O)CC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 2.5737475178375032e-09
-    Ea: 32269.100000000002
-    n: 4.29
-    type: Arrhenius
-  products:
-  - CCCC1C[CH]CC(OO)C1
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - CCCC1CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 2.1638667570044307e-09
-    Ea: 31531.675000000003
-    n: 4.29
-    type: Arrhenius
-  products:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - CCC(OO)C1CCCCC1
-  radicalchange: 0
-  reactants:
-  - '[CH2]CC(OO)C1CCCCC1'
-  - CCCC1(OO)CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
-    A: 8.779284329795734e-09
-    Ea: 17528.615555555556
-    n: 3.9572222222222218
-    type: Arrhenius
-  products:
-  - CCCC1(OO)CCC[C](OO)C1
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - CCCC1(OO)CCCC(OO)C1
-  type: ElementaryReaction
-- kinetics:
     A: 3090000000000.0
     Ea: 45643.3
     n: 0.0
@@ -112759,19 +112722,6 @@ Reactions:
   radicalchange: 0
   reactants:
   - CCC[C]1CC(OO)CCC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 6.589613038714778e-17
-    Ea: -22468.08000000002
-    n: 6.535
-    type: Arrhenius
-  products:
-  - CH3OOH
-  - CCCC1CCC(O[O])CC1OO
-  radicalchange: 0
-  reactants:
-  - CH2OOH
-  - CCCC1CCC(OO)CC1OO
   type: ElementaryReaction
 - kinetics:
     A: 9.200000000000003e-08
@@ -113135,6 +113085,31 @@ Reactions:
   - '[CH2]C(=O)CCCC(=O)CCC'
   type: ElementaryReaction
 - kinetics:
+    A: 6.589613038714778e-17
+    Ea: -22468.08000000002
+    n: 6.535
+    type: Arrhenius
+  products:
+  - CH3OOH
+  - CCCC1CCC(O[O])CC1OO
+  radicalchange: 0
+  reactants:
+  - CH2OOH
+  - CCCC1CCC(OO)CC1OO
+  type: ElementaryReaction
+- kinetics:
+    A: 2962760.0
+    Ea: 0.0
+    n: -0.119415
+    type: Arrhenius
+  products:
+  - CCCC(=O)CCCC(=O)CO[O]
+  radicalchange: 0
+  reactants:
+  - O2
+  - '[CH2]C(=O)CCCC(=O)CCC'
+  type: ElementaryReaction
+- kinetics:
     A: 48200000.00000001
     Ea: 0.0
     n: 0.0
@@ -113159,18 +113134,6 @@ Reactions:
   reactants:
   - CH3CHOH
   - CCCC1(OO)CCC(O[O])CC1
-  type: ElementaryReaction
-- kinetics:
-    A: 2962760.0
-    Ea: 0.0
-    n: -0.119415
-    type: Arrhenius
-  products:
-  - CCCC(=O)CCCC(=O)CO[O]
-  radicalchange: 0
-  reactants:
-  - O2
-  - '[CH2]C(=O)CCCC(=O)CCC'
   type: ElementaryReaction
 - kinetics:
     A: 1195993311.0180836
@@ -113207,19 +113170,6 @@ Reactions:
   - CCCC(=O)CCC1=C(O)CO1
   type: ElementaryReaction
 - kinetics:
-    A: 8.779284329795734e-09
-    Ea: 17528.615555555556
-    n: 3.9572222222222218
-    type: Arrhenius
-  products:
-  - C[C](CC1(OO)CCCCC1)OO
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - CC(CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
     A: 1620000000000.0027
     Ea: 8284.32
     n: -0.305
@@ -113247,71 +113197,6 @@ Reactions:
     n: -0.75
     type: Arrhenius
   products:
-  - C7H12-13
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - C[C](CC1(OO)CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CC(CC1(OO)C[CH]CCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CC(CC1(OO)CC[CH]CC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CC(CC1(O[O])CCCCC1)OO
-  type: ElementaryReaction
-- kinetics:
-    A: 48200000.00000001
-    Ea: 0.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CC(CC1(OO)CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CC(CC1(OO)CCCCC1)O[O]
-  type: ElementaryReaction
-- kinetics:
-    A: 432000000.00000006
-    Ea: 0.0
-    n: -0.75
-    type: Arrhenius
-  products:
   - CH2CHOH
   - CCCC1CCC(OO)CC1OO
   radicalchange: -2
@@ -113409,32 +113294,6 @@ Reactions:
   reactants:
   - CH3CHOH
   - CCCC1CCC(OO)CC1O[O]
-  type: ElementaryReaction
-- kinetics:
-    A: 8.779284329795734e-09
-    Ea: 17528.615555555556
-    n: 3.9572222222222218
-    type: Arrhenius
-  products:
-  - CCCC1CCC(OO)C[C]1OO
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - CCCC1CCC(OO)CC1OO
-  type: ElementaryReaction
-- kinetics:
-    A: 8.779284329795734e-09
-    Ea: 17528.615555555556
-    n: 3.9572222222222218
-    type: Arrhenius
-  products:
-  - CCCC1CC[C](OO)CC1OO
-  - CCCC1(OO)CCCC(OO)C1
-  radicalchange: 0
-  reactants:
-  - C[CH]CC1(OO)CCCC(OO)C1
-  - CCCC1CCC(OO)CC1OO
   type: ElementaryReaction
 - kinetics:
     A: 423.68859892970465
@@ -114654,19 +114513,6 @@ Reactions:
   - CC(CC1C[CH]CCC1)OO
   type: ElementaryReaction
 - kinetics:
-    A: 102600000.00000001
-    Ea: 0.0
-    n: -0.35
-    type: Arrhenius
-  products:
-  - C7H12-13
-  - CC(CC1CCCCC1)OO
-  radicalchange: -2
-  reactants:
-  - SAXC7H13
-  - CC(CC1C[CH]CCC1)OO
-  type: ElementaryReaction
-- kinetics:
     A: 1.0574493059268619e-09
     Ea: 12133.600000000002
     n: 4.34
@@ -114680,16 +114526,16 @@ Reactions:
   - CC(CC1C[CH]CCC1)OO
   type: ElementaryReaction
 - kinetics:
-    A: 25600000.000000004
+    A: 102600000.00000001
     Ea: 0.0
     n: -0.35
     type: Arrhenius
   products:
-  - CCCC1=CC(=O)CC(OO)C1
+  - C7H12-13
   - CC(CC1CCCCC1)OO
   radicalchange: -2
   reactants:
-  - CCCC1[CH]C(=O)CC(OO)C1
+  - SAXC7H13
   - CC(CC1C[CH]CCC1)OO
   type: ElementaryReaction
 - kinetics:
@@ -114704,6 +114550,19 @@ Reactions:
   reactants:
   - C[CH]CC1(OO)CCCC(OO)C1
   - CC(CC1CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 25600000.000000004
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - CCCC1=CC(=O)CC(OO)C1
+  - CC(CC1CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - CCCC1[CH]C(=O)CC(OO)C1
+  - CC(CC1C[CH]CCC1)OO
   type: ElementaryReaction
 - kinetics:
     A: 2.5737475178375032e-09
@@ -120009,19 +119868,6 @@ Reactions:
   - CCC[C]1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
-    A: 4.3750000000000005e-07
-    Ea: -16861.5
-    n: 3.59
-    type: Arrhenius
-  products:
-  - C3H6
-  - C3H7cC6H10OO
-  radicalchange: 0
-  reactants:
-  - CH3CCH2
-  - CCCC1CCC(OO)CC1
-  type: ElementaryReaction
-- kinetics:
     A: 4840000.000000001
     Ea: 0.0
     n: 0.0
@@ -120048,6 +119894,19 @@ Reactions:
   - CCC[C]1CCCC(OO)C1
   type: ElementaryReaction
 - kinetics:
+    A: 4.3750000000000005e-07
+    Ea: -16861.5
+    n: 3.59
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H7cC6H10OO
+  radicalchange: 0
+  reactants:
+  - CH3CCH2
+  - CCCC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
     A: 843000.0000000001
     Ea: 0.0
     n: 0.0
@@ -120058,6 +119917,988 @@ Reactions:
   radicalchange: -2
   reactants:
   - CH3CCH2
+  - CCCC1[CH]C(=O)CC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2000000000000006e+29
+    Ea: 55647.200000000004
+    n: -7.76
+    type: Arrhenius
+  products:
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - CH3_1
+  - C2H2
+  type: ElementaryReaction
+- kinetics:
+    A: 5.400000000000001e+23
+    Ea: 68199.2
+    n: -6.09
+    type: Arrhenius
+  products:
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - H
+  - aC3H4
+  type: ElementaryReaction
+- kinetics:
+    A: 5.500000000000001e+22
+    Ea: 17991.2
+    n: -5.74
+    type: Arrhenius
+  products:
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - H
+  - pC3H4
+  type: ElementaryReaction
+- kinetics:
+    A: 1.5e+48
+    Ea: 225517.6
+    n: -12.71
+    type: Arrhenius
+  products:
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - CH3CCH2
+  type: ElementaryReaction
+- kinetics:
+    A: 3340000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - pC3H4
+  radicalchange: -2
+  reactants:
+  - H
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 60000000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCO
+  - C2H4
+  radicalchange: -2
+  reactants:
+  - O_1
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 5000000.000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H
+  - HCO
+  - C2H4
+  radicalchange: 0
+  reactants:
+  - OH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 100000.00000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCO
+  - CH3CHO
+  radicalchange: 0
+  reactants:
+  - O2
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 20000000.000000004
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - OH
+  - HCO
+  - C2H4
+  radicalchange: 0
+  reactants:
+  - HO2_1
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 90000000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - HCO
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 100000.00000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - RCH4_1
+  - pC3H4
+  radicalchange: -2
+  reactants:
+  - CH3_1
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.8040000000000002
+    Ea: 51392.072
+    n: 2.5
+    type: Arrhenius
+  products:
+  - H2
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - H
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 121000.00000000001
+    Ea: 37488.64
+    n: 0.7
+    type: Arrhenius
+  products:
+  - OH
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - O_1
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 2.1400000000000006
+    Ea: 11623.152
+    n: 2.0
+    type: Arrhenius
+  products:
+  - ROH_1
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - OH
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 1.3500000000000004e-06
+    Ea: 53756.032
+    n: 3.5
+    type: Arrhenius
+  products:
+  - RCH4_1
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - CH3_1
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 1.46e+24
+    Ea: 90571.04800000001
+    n: -4.34
+    type: Arrhenius
+  products:
+  - C2H4
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - H
+  - C5H8-13
+  type: ElementaryReaction
+- kinetics:
+    A: 7.71e+69
+    Ea: 585760.0
+    n: -16.09
+    type: Arrhenius
+  products:
+  - H
+  - CH3CHCH
+  radicalchange: 2
+  reactants:
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 0.0009570000000000002
+    Ea: 87021.3424
+    n: 3.059
+    type: Arrhenius
+  products:
+  - RH2O2_1
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - HO2_1
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 20000000.000000004
+    Ea: 260537.68000000002
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HO2_1
+  - CH3CHCH
+  radicalchange: 2
+  reactants:
+  - O2
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 3333000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - aC3H4
+  radicalchange: -2
+  reactants:
+  - H
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 100000.00000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - RCH4_1
+  - aC3H4
+  radicalchange: -2
+  reactants:
+  - CH3_1
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 1000000.0000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - OH
+  - C5H8-13
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - CH3OO
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - CH3OOH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 456000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - CH2CO
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3CO
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 2410000.0000000005
+    Ea: 25104.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2CO
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH2CHO
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.00031600000000000004
+    Ea: 75312.0
+    n: 3.13
+    type: Arrhenius
+  products:
+  - C2H6
+  - CH3CHCH
+  radicalchange: 0
+  reactants:
+  - C2H5
+  - C3H6
+  type: ElementaryReaction
+- kinetics:
+    A: 8.20464132228247
+    Ea: -4666.206
+    n: 1.8771250000000002
+    type: Arrhenius
+  products:
+  - C2H2
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - C2H3
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 30100000.000000004
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3CHO
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3CH2O
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - CH3CH2OO
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - CH3CH2OOH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 9.55296053840704e-09
+    Ea: 1255.1999999999998
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CH2CHO
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - CH3CHO
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - CH2CHO
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - CH2CHOH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH2CH2OH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 456000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - CH2CHOH
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3CHOH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 2.2445935044011889e-10
+    Ea: 14644.0
+    n: 4.71
+    type: Arrhenius
+  products:
+  - CH2CH2OH
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - CH3CH2OH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 4.301017776457609
+    Ea: -4746.486500000003
+    n: 1.90834375
+    type: Arrhenius
+  products:
+  - HCCOH
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CHCHOH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HOCHO
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - HOCH2O
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 30100000.000000004
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - HOCO
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 6459635.523851604
+    Ea: 5020.8
+    n: -0.13999999999999999
+    type: Arrhenius
+  products:
+  - CO2
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - OCHO
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 30100000.000000004
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH2OH
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 456000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - CH2O
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3O
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 456000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - C2H4
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - C2H5
+  - CH3CHCH
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_13
+  type: ElementaryReaction
+- kinetics:
+    A: 912000000.0000002
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_14
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_5
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_18
+  type: ElementaryReaction
+- kinetics:
+    A: 456000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_5
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_19
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_6
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_6
+  type: ElementaryReaction
+- kinetics:
+    A: 456000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_6
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_5
+  type: ElementaryReaction
+- kinetics:
+    A: 843000.0000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_8
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_12
+  type: ElementaryReaction
+- kinetics:
+    A: 456000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_8
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_10
+  type: ElementaryReaction
+- kinetics:
+    A: 4840000.000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_9
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - cC6H11
+  type: ElementaryReaction
+- kinetics:
+    A: 17679300000.0
+    Ea: 0.0
+    n: -1.00291
+    type: Arrhenius
+  products:
+  - pch_double_4
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - cC6H11
+  type: ElementaryReaction
+- kinetics:
+    A: 843000.0000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_1
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_4
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_1
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_3
+  type: ElementaryReaction
+- kinetics:
+    A: 843000.0000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_2
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_1
+  type: ElementaryReaction
+- kinetics:
+    A: 4840000.000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_2
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_3
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCCC(CCC=O)CCO[O]
+  radicalchange: 0
+  reactants:
+  - CH3CHCH
+  - CCCC(CCC=O)CCOO
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - C3H6
+  - CC(CC1(O[O])CCCCC1)OO
+  radicalchange: 0
+  reactants:
+  - CH3CHCH
+  - CC(CC1(OO)CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 4840000.000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_11
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_2
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_11
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_7
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCCC1(O[O])CCCCC1
+  radicalchange: 0
+  reactants:
+  - CH3CHCH
+  - CCCC1(OO)CCCCC1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCCC1(O[O])CCCC(OO)C1
+  radicalchange: 0
+  reactants:
+  - CH3CHCH
+  - CCCC1(OO)CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_4
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_5
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_4
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_4
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_3
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_7
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - pch_double_3
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - QOOH_1
+  type: ElementaryReaction
+- kinetics:
+    A: 30100000.000000004
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCCC(CC=O)OO
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - CCCC(C[CH]O)OO
+  type: ElementaryReaction
+- kinetics:
+    Pmax: 10000000.000000004
+    Pmin: 1000.0
+    Tmax: 2000.0
+    Tmin: 300.0
+    coefs:
+    - - -33.576125829040414
+      - 1.8697040126070144
+      - -0.07618037940563982
+      - -0.030249556716091863
+    - - 35.076869124596094
+      - 0.00012164457647319159
+      - 0.0011994248134033787
+      - 0.0015917990771096011
+    - - -1.1497396673320512
+      - 0.1541564542207942
+      - 0.08490177624631878
+      - 0.028739846567201653
+    - - -0.18234845674437672
+      - -0.0015860405837940794
+      - -0.0015625172840081137
+      - -0.0012066895598172311
+    - - 0.021699856067954215
+      - -0.06065625142281277
+      - -0.029419334966954813
+      - -0.0060509323219042266
+    - - -0.025858043178047296
+      - 0.003624501450389332
+      - 0.0019460357463529365
+      - 0.0005583220427934862
+    type: Chebyshev
+  products:
+  - C2H3
+  - CH3CHCH
+  radicalchange: 2
+  reactants:
+  - C5H8-13
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCCC1(OO)CCC(O[O])CC1
+  radicalchange: 0
+  reactants:
+  - CH3CHCH
+  - CCCC1(OO)CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCCC1=CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - CCC[C]1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 4840000.000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - CC(CC1=CCCCC1)OO
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - CC(C[C]1CCCCC1)OO
+  type: ElementaryReaction
+- kinetics:
+    A: 2420000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCC=C1CCCC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
+  - CCC[C]1CCCC(OO)C1
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-06
+    Ea: -31296.320000000003
+    n: 3.52
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H7cC6H10OO
+  radicalchange: 0
+  reactants:
+  - CH3CHCH
+  - CCCC1CCC(OO)CC1
+  type: ElementaryReaction
+- kinetics:
+    A: 843000.0000000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - CCCC1=CC(=O)CC(OO)C1
+  radicalchange: -2
+  reactants:
+  - CH3CHCH
   - CCCC1[CH]C(=O)CC(OO)C1
   type: ElementaryReaction
 Units: {}
