@@ -1,0 +1,342 @@
+\documentclass[18pt]{report}
+\usepackage[paperheight=11in, paperwidth=8.5in, left=1.5in, right=1in, top=1in, bottom=1in]{geometry}
+%\usepackage[a6paper,margin=0.4cm]{geometry}
+\usepackage{newunicodechar}
+\newunicodechar{fi}{fi}
+\newunicodechar{ff}{ff}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage[sorting=none]{biblatex} 
+\addbibresource{reference.bib} % maintained by hand
+\addbibresource{references.bib} % direct import from Mendeley
+\usepackage[version=4]{mhchem}
+\usepackage[ampersand]{easylist}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\usepackage[document]{ragged2e}
+\usepackage{xifthen}
+\usepackage[english]{babel}
+\newcommand{\oneline}[1]{%
+  \newdimen{\namewidth}%
+  \setlength{\namewidth}{\widthof{#1}}%
+  \ifthenelse{\lengthtest{\namewidth < \textwidth}}%
+  {#1}% do nothing if shorter than text width
+  {\resizebox{\textwidth}{!}{#1}}% scale down
+}
+
+\usepackage{indentfirst}
+\usepackage{tocloft}
+\usepackage{notoccite}
+\usepackage{appendix}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{abstract}
+\usepackage{pbox}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\addto\captionsenglish{\renewcommand{\arraystretch}{1.5}}
+\newcolumntype{s}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+\usepackage{adjustbox}
+\usepackage{chemfig}
+\usepackage{xymtexps}
+\usepackage{xymtexpdf}
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+
+\defbibheading{bibliography}[\bibname]{%
+  \chapter*{\centering #1}%
+  \markboth{#1}{#1}}
+  
+% \addto\captionsenglish{\renewcommand{\bibname}{REFERENCES}}
+% \addto\captionsenglish{\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}}
+% \setcounter{figure}{0}
+
+% \let\listoffigures\listoffigures
+
+
+
+\addto\captionsenglish{\renewcommand{\abstractname}{\hfill\bfseries\Huge ABSTRACT\hfill}} 
+\addto\captionsenglish{\renewcommand{\cftaftertoctitle}{\hfill}}
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{\hfill\bfseries\Huge TABLE OF CONTENTS\hfill}} 
+\addto\captionsenglish{\renewcommand{\cftaftertoctitle}{\hfill}}
+
+\addto\captionsenglish{\renewcommand{\listfigurename}{\hfill\bfseries\Huge LIST OF FIGURES\hfill}} 
+\addto\captionsenglish{\renewcommand{\cftaftertoctitle}{\hfill}}
+
+\addto\captionsenglish{\renewcommand{\listtablename}{\hfill\bfseries\Huge LIST OF TABLES\hfill}} 
+\addto\captionsenglish{\renewcommand{\cftaftertoctitle}{\hfill}}
+
+
+\addto\captionsenglish{\renewcommand{\bibname}{\hfill\bfseries\Huge REFERENCES\hfill}} 
+\addto\captionsenglish{\renewcommand{\cftaftertoctitle}{\hfill}}
+
+\addto\captionsenglish{\renewcommand{\appendixtocname}{APPENDIX}}
+
+\makeatletter
+\addto\captionsenglish{\renewcommand{\thereaction{Reaction\,\thechapter.\arabic{reaction}}}}
+\newcounter{reaction}
+\newcommand\reactiontag%
+  {\refstepcounter{reaction}\tag{\thereaction}}
+\newcommand\reaction@[2][]%
+  {\begin{equation}\ce{#2}%
+  \ifx\@empty#1\@empty\else\label{#1}\fi%
+  \reactiontag\end{equation}}
+\newcommand\reaction@nonumber[1]%
+  {\begin{equation*}\ce{#1}\end{equation*}}
+\newcommand\reaction%
+  {\@ifstar{\reaction@nonumber}{\reaction@}}
+\makeatother
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\fancypagestyle{plain}{\thispagestyle{fancy}} 
+\fancyhead[R]{\thepage}
+\addto\captionsenglish{\renewcommand{\headrulewidth}{0pt}}
+\addto\captionsenglish{\renewcommand{\abstractname}{ABSTRACT}}
+% \defbibheading{bibliography}[\bibname]{\centering}
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+\begin{document}
+\input{title.tex}
+
+\pagenumbering{roman}
+
+% \input{chapters/abstract}
+\thispagestyle{empty}
+\chapter*{\centering ABSTRACT}
+\input{abstract}
+\addcontentsline{toc}{section}{\abstractname}
+
+\cleardoublepage
+\chapter*{\centering ACKNOWLEDGMENTS}
+\input{acknowledgement}\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoftables
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+
+\pagenumbering{arabic}
+
+
+
+\justifying
+\input{chapters/intro.tex}
+\input{chapters/model_generation}
+\input{chapters/n-decane}
+\input{chapters/iso-octane}
+\input{chapters/n-propyl-cyclo-hexane}
+\input{chapters/Blended_GTL_fuel_model_generation}
+\input{chapters/conclusion}
+\addcontentsline{toc}{section}{REFERENCES}
+\printbibliography[title=REFERENCES]
+% \appendix
+\chapter*{\centering APPENDIX}
+\input{appendix}
+\addcontentsline{toc}{section}{\appendixtocname}
+\end{document}
+
+\begin{document}
+\clearpage
+\section*{Outline}
+\newcommand*{\cdone}{{\bfseries\hspace{-1.1em}{\Large{\checkmark}}\hspace{0.1em}}}
+\newcommand*{\ejm}{{\hspace{-2.2em}\makebox[0pt]{\color{red}\bfseries E}}\hspace{2.2em}} % Emily
+
+\begin{easylist}[checklist]
+\ListProperties{Style*={\framebox(7,7){}}\hskip.6em}
+% & \kn \ejm \cdone proposed work
+& Chapter 1: Introductory Chapter
+&& opening statement about the scope of this thesis and what it aims to deliver (\textbf{goal})
+&&& Environmental pollution and emissions regulation around Europe and the US as indicated from the environmental protection agencies and the energy information agencies\cite{Epa2019Fast2019}\cite{EnergyInformationAdministration2018U.S.2017}
+&&& The current use of fossil fuels in the form of coal, oil and natural gas for power generation, transportation and industrial processes and heavy manufacturing
+
+&& \textbf{Goal}
+&&& make the basis or set of guidelines on how to construct the most suitable surrogate models for GTL fuels that are close enough to experiments and also suitable for engine modeling. To concatenate pure primary reference fuels along with their detailed thermodynamics and kinetics or to blend all the individual species present from the onset. 
+&&& This thesis dives to answer this question of which approach is the best practice to build surrogate models of GTL fuel blends and validate those models against well defined experiments as well other GTL kinetic models. In order to validate our blended models, we use a variety of experiments to verify our results. Each blend ought to have the capability of producing the detailed chemical properties of each of the main pure primary reference fuels 
+
+&& \textbf{Motivation} 
+&&& Current transportation jet fuels currently being used and the high emissions from them. 
+&&& Need to replace current transportation fuels with alternatives that promise lower emissions to mitigate pollution
+&&& Existing alternative transportation fuels such LNG, oxygenated fuels
+&&& Short comings of the existing transportation fuels and where they fail in heavy machinery and large scale applications
+&&& Need to introduce alternative transport fuels for large scale applications which do not require new engine designs, rather retrofitting our new alternative transport fuels with the existing engines
+&&& Introduction of GTL fuels which have lower emissions as described by the current studies and its scalability in the near future
+&&& Synthesis of GTL via the Fischer-Tropsch Process (F-T) process of carbon capture of natural gas and CO through catalytic processes and reforming
+&&& Wish to reduce emissions (soot, NOx, SOx) from jet and diesel engines \cite{Boogaard2017ToxicologicalToxicology}\cite{Whale2018ToxicologicalEcotoxicology}
+&&& GTL fuels are drop-in replacements (work in existing engines) with lower emissions
+&&& \cdone lower soot in jet engines\cite{Wang2012}
+&&& models help engine designers
+
+
+&& \textbf{GTL fuels}
+&&& what they are
+&&& used for diesel applications, jet engines, heavy machinery
+&&& fewer aromatics than petroleum diesel, so less soot
+&&& made by Fischer-Tropsch catalytic conversion of \ce{CH4} to liquids (check)
+&&& Need to understand how GTL fuels behave when used. 
+&&&& Need to study these fuels to obtain the physical and chemical properties
+&&&& Need to design experiments that closely correlates to how these fuels behave under engine-like conditions
+&&&& How do we determine what makes up the GTL fuel blends
+&&&& Use of mass spectrometry analysis and chromatography to see the composition of the blends
+&&&& Insert charts that show the most common groups found in GTL fuel blends from the spectrometry analysis \cite{Dooley2010AProperties}
+&&&& The use of surrogate fuel model blends to represent the most common groups in fuel blends 
+&&&& Choice of GTL fuel blends based on Shell S-8 GTL and based on the work of \cite{Dagaut2016ExperimentalSurrogates}.
+
+
+&& \textbf{Why Surrogate Models}
+&&& Surrogate models allow us to properly describe complex models with the representation of just a few major fuels
+&&& Surrogate models are employed in large and detailed analyses of large, complex physical domains from networks to biological systems and chemical reactivities of large compounds. The use of mass spectrometry allows us to predict which compounds are dominant in complex fuel mixtures and represent the overall mixture based on the relative proportions of the individual compounds as derived from the spectrometric analysis. 
+&&& By the using surrogates, we can assume that the physical properties are closely matched to the real fuel mixture as well as the chemical properties. The physical properties include density, specific gravity, viscosity and the appropriate molecular weight of the real fuel. While that of the chemical properties attempting to match is the reacitivity of the fuel such as ignition delay times, lamianr flame speeds and species concentrations/profiles. A good surrogate fuel  should account for both the physical and chemical properties of the real fuel, especially for heavy fuels such as jet and diesel fuels, since the physcial phenomena play such an important role in the formation of air-fuel mixtures as well as soot and pollutant formation for the chemical behavior.\cite{Mehl2012ModelingApproach} 
+
+
+&& \textbf{Mechanism generation}
+&&& Need to design models that represent these fuels that are closely related to the real fuel
+&&& Need for chemical kinetic mechanisms
+&&& Detailed kinetic models that describe elementary reactions
+&&& Intro to RMG \cite{Gao2016ReactionMechanisms}
+&&& RMG generates them, based on reaction rules/templates, and rate estimates using group additivity, rate rules, machine learning, tree estimates.
+
+
+&& Literature review: what is already known (and what is not yet) about alternative jet fuel surrogates 
+&& What is known about GTL fuel surrogates and how they're constructed \cite{Naik2011DetailedFuels}\cite{Edwards2001SurrogateFuels}\cite{Dagaut2014CombustionModeling} \cite{Dooley2010AProperties}\cite{Dagaut2014}
+&& GTL surrogate selection
+&& GTL combustion chemistry and kinetic modeling
+
+
+&& \textbf{Objective (thesis question)}:
+&&& how best to build a model of a GTL fuel blend?
+&&&& merge models, or build a blended model?
+&&&& how do blends affect flammability ? does it improve, decrease or possibly adversely affect the flammability and what is its impact on the environment as well as engines?
+
+& Chapter 2:Model Generation in RMG
+&& how we build kinetic models
+&&& how RMG works
+&&&& thermo selection - group additivity and benson groups
+&&&& kinetics selection - training rules and rate of flux production 
+&&& surrogate molecule selection
+&&&& mass spectrometry, chromatography
+&&&& major compound classes are n-alkanes, iso-alkanes, naphthenes, cycloalkanes, tiny aromatics
+&&&& picked representative molecules: n-decane, iso-octane, cyclo-propylhexane \cite{Chen2017ViolationModels}
+&&& building models for individual components
+&&&& tolerances
+&&&& seed mechanisms
+&&&& add species expected to be important -reaction pathways
+&&&&& following reaction classes
+&&&& reactor conditions
+&&&&& reactor with pdep and without pdep 
+&&&&& \cdone why is pdep important ? using Prof. Green's paper about temperature and molecular size of the reacting species. Using the graph of \cite{Wong2003TemperatureLimit} Fig.1, can we confidently say that it is correct to exclude the pressure dependence in the low temperature region where cool flame effects are observed. Even in Fig.3 we see the criteria for the same as regards fall off reactions and molecular size.
+&&&&& temperature ranges
+&&&& staging
+&&&& constraints
+&&& building models for mixture
+&&&& concatenate models of individual components 
+&&&& build a model of blended fuel
+&&& Scalability Strategies \cite{Jocher2019ScalabilityGeneration}
+
+&& Combustion chemistry
+&& why is chemistry important
+&& kinetics of reactions
+&& high temperature combustion pathways
+&&& reaction families
+&&&& H abstraction
+&&&& unimolecular decomposition
+&& low temperature combustion pathways
+&&& reaction families
+&&&& H abstraction
+&&&& radical isomerization
+
+& Chapter 3: N-decane Model Generation
+&& model building in RMG
+&&&& thermo selection - group additivity and benson groups
+&&&& kinetics selection - training rules and rate of flux production 
+&&&& picked representative molecules: n-decane, iso-octane, cyclo-propylhexane \cite{Chen2017ViolationModels}
+&&&& tolerances
+&&&& seed mechanisms
+&&&& add species expected to be important - reaction pathways\cite{Merchant2015UnderstandingPropane} path flux diagrams
+&&&&& following reaction classes
+&&&&& high T pathways:
+&&&&& low T pathways: peroxides, ketohydroperoxides
+&&&& reactor conditions
+&&&&& reactor with pdep and without pdep 
+&& validation of model using: 
+&&& Shock Tubes for ignition delays
+&&&& Rapid Compression Machines (RCM) for moving walls with imposed pressure profiles (to match Dagaut's experiments for surrogate GTL\cite{Dagaut2014})
+&&& Premixed Laminar flame speeds in flow reactors
+&&& Cantera comparison with other models show plots \cite{cantera}
+
+& Chapter 4: Iso-octane Model Generation
+&& model building in RMG
+&&&& thermo selection - group additivity and benson groups
+&&&& kinetics selection - training rules and rate of flux production 
+&&&& tolerances
+&&&& seed mechanisms
+&&&& add species expected to be important - reaction pathways\cite{Merchant2015UnderstandingPropane} path flux diagrams
+&&&&& following reaction classes
+&&&&& high T pathways:
+&&&&& low T pathways: peroxides, ketohydroperoxides
+&&&& reactor conditions
+&&&&& reactor with pdep and without pdep 
+&& validation of model using: 
+&&& Shock Tubes for ignition delays
+&&&& Rapid Compression Machines (RCM) for moving walls with imposed pressure profiles (to match Dagaut's experiments for surrogate GTL\cite{Dagaut2014})
+&&& Cantera comparison with other models show plots \cite{cantera}
+
+& Chapter 5: Propyl-Cyclohexane Model Generation
+&& model building in RMG
+&&&& thermo selection - group additivity and benson groups
+&&&& kinetics selection - training rules and rate of flux production 
+&&&& changed kinetics by reducing A factors in the Arrhenius expressions for cyclo-propylhexane and any rate that violated the collision limit based on the approach from  \cite{Chen2017ViolationModels} and reused new rates to generate models
+&&&& tolerances
+&&&& seed mechanisms
+&&&& add species expected to be important - reaction pathways\cite{Merchant2015UnderstandingPropane} path flux diagrams
+&&&&& following reaction classes
+&&&& reactor conditions
+&&&&& reactor with pdep and without pdep 
+&& validation of model using: 
+&&& Shock Tubes for ignition delays
+&&&& Rapid Compression Machines (RCM) for moving walls with imposed pressure profiles (to match Dagaut's experiments for surrogate GTL\cite{Dagaut2014})
+&&& Cantera comparison with other models show plots \cite{cantera}
+&&&&& high T pathways:
+&&&&& low T pathways: peroxides, ketohydroperoxides occurred only for high temperature model
+
+& Chapter 6: Blended models Model Generation
+&& blended models (data from Dagaut 2014\cite{Dagaut2014}) \cite{Dooley2010MethylModel} \cite{Naik2011DetailedFuels}
+&&&& ignition delays (shock tubes)
+&&&& flame speeds (from burner)
+
+& Chapter 7: Conclusions
+&& Restatement of goals and motivations was thesis question answered ? 
+&&& how best to build a model of a GTL fuel blend? 
+&&& merge models, or build a blended model?
+&&&& how do blends affect flammability ? does it improve, decrease or possibly adversely affect the flammability and what is its impact on the environment as well as engines?
+
+&& Future Work and Recommendations
+&&& Better thermo-kinetic estimates of parameters
+&&& Mechanism reductions
+&&& Uncertainty analysis to observe how uncertain estimates are
+&&& Model generation optimization 
+& Bibliography
+\end{easylist}
+
+\end{document}
